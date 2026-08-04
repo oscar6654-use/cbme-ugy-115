@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>115學年度 UGY CBME 學習任務導航｜三軍總醫院教學部</title>
+<meta name="description" content="三軍總醫院 115學年度 UGY 職前訓練 CBME 學習任務導航——以學生角度整理的學期任務地圖">
+<style>
+/* ============================================================
+   設計系統：深海軍藍 × 醫療青綠 × 米白霧灰，精品校務入口風格
+   ============================================================ */
+:root{
+  --navy:#12233F;
+  --navy-2:#1B3A5E;
+  --navy-ink:#0B1728;
+  --teal:#0C8C82;
+  --teal-dark:#086A62;
+  --teal-light:#E4F4F1;
+  --amber:#B4740E;
+  --amber-dark:#8A5A0B;
+  --amber-light:#FBF1DD;
+  --red:#B8463A;
+  --red-light:#FBEBE8;
+  --bg:#F6F4EF;
+  --surface:#FFFFFF;
+  --surface-2:#FBFAF7;
+  --border:#E4E0D5;
+  --border-strong:#D3CDBD;
+  --ink:#20293A;
+  --ink-soft:#3C4657;
+  --muted:#6B7688;
+  --muted-2:#96A0AF;
+  --radius-sm:8px;
+  --radius:14px;
+  --radius-lg:20px;
+  --shadow-sm:0 1px 2px rgba(18,35,63,0.06);
+  --shadow:0 4px 16px rgba(18,35,63,0.08);
+  --shadow-lg:0 12px 32px rgba(18,35,63,0.12);
+  --maxw:1180px;
+  --font: -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Helvetica Neue", Arial, sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden;width:100%;}
+body{
+  margin:0;
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.65;
+  font-size:16px;
+  overflow-x:hidden;
+  width:100%;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;}
+a{color:var(--teal-dark);}
+h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:0.01em;color:var(--navy-ink);}
+p{margin:0;}
+ul,ol{margin:0;padding:0;}
+li{list-style:none;}
+button{font-family:inherit;cursor:pointer;}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
+
+/* ---------- 頂部導覽列 ---------- */
+.topnav{
+  position:sticky;top:0;z-index:100;
+  background:var(--bg);
+  border-bottom:1px solid var(--border);
+}
+.topnav-inner{
+  max-width:var(--maxw);margin:0 auto;padding:0 20px;
+  display:flex;align-items:center;justify-content:space-between;
+  height:64px;
+}
+.brand{
+  display:flex;align-items:center;gap:10px;
+  font-weight:800;color:var(--navy-ink);font-size:15px;
+  white-space:nowrap;
+}
+.brand-dot{width:9px;height:9px;border-radius:50%;background:var(--teal);flex:none;}
+.brand small{display:block;font-weight:500;color:var(--muted);font-size:11.5px;margin-top:1px;}
+.nav-links{display:flex;gap:4px;align-items:center;}
+.nav-links a{
+  padding:9px 13px;border-radius:8px;font-size:14px;font-weight:600;
+  color:var(--ink-soft);text-decoration:none;transition:background .15s,color .15s;
+}
+.nav-links a:hover,.nav-links a:focus-visible{background:var(--teal-light);color:var(--teal-dark);}
+.nav-toggle{
+  display:none;background:var(--surface);border:1px solid var(--border-strong);
+  border-radius:8px;width:44px;height:44px;align-items:center;justify-content:center;
+}
+.nav-toggle span,.nav-toggle span::before,.nav-toggle span::after{
+  content:"";display:block;width:20px;height:2px;background:var(--navy-ink);
+  position:relative;transition:.2s;
+}
+.nav-toggle span::before{position:absolute;top:-6px;}
+.nav-toggle span::after{position:absolute;top:6px;}
+
+/* ---------- Hero ---------- */
+.hero{
+  background:linear-gradient(155deg,var(--navy) 0%, var(--navy-2) 55%, #234a72 100%);
+  color:#fff;padding:52px 0 64px;position:relative;overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 85% 15%, rgba(12,140,130,0.25), transparent 55%);
+  pointer-events:none;
+}
+.hero-inner{position:relative;z-index:1;}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.18);
+  padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;
+  letter-spacing:0.03em;margin-bottom:20px;color:#DCEDEA;
+}
+.hero h1{
+  color:#fff;font-size:clamp(26px,4vw,40px);line-height:1.3;margin-bottom:14px;
+  max-width:760px;
+}
+.hero-sub{color:#C9D5E5;font-size:15.5px;max-width:640px;margin-bottom:6px;}
+.hero-meta{
+  display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 26px;
+}
+.hero-pill{
+  background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.16);
+  padding:8px 14px;border-radius:10px;font-size:13.5px;color:#EAF0F6;
+  display:flex;align-items:center;gap:8px;
+}
+.hero-pill b{color:#fff;font-weight:700;}
+.hero-alert{
+  background:rgba(180,116,14,0.18);border:1px solid rgba(251,241,221,0.35);
+  border-radius:var(--radius);padding:16px 18px;max-width:680px;margin-bottom:14px;
+  display:flex;gap:12px;align-items:flex-start;
+}
+.hero-alert .icon{flex:none;width:20px;height:20px;color:#F5D68B;margin-top:2px;}
+.hero-alert-title{font-weight:700;color:#FCEFCE;font-size:13.5px;margin-bottom:3px;letter-spacing:.02em;}
+.hero-alert-body{color:#F1E6C9;font-size:14px;line-height:1.6;}
+#hero-next-event{
+  background:rgba(12,140,130,0.22);border:1px solid rgba(180,224,217,0.4);
+  border-radius:var(--radius);padding:16px 18px;max-width:680px;margin-bottom:26px;
+  display:flex;gap:12px;align-items:flex-start;
+}
+#hero-next-event .icon{flex:none;width:20px;height:20px;color:#8FE0D3;margin-top:2px;}
+.hero-next-title{font-weight:700;color:#D3F3EC;font-size:13.5px;margin-bottom:3px;letter-spacing:.02em;}
+.hero-next-body{color:#E7F7F3;font-size:14px;line-height:1.6;}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:13px 22px;border-radius:11px;font-size:14.5px;font-weight:700;
+  border:1px solid transparent;text-decoration:none;transition:transform .12s, box-shadow .12s, background .15s;
+  min-height:48px;
+}
+.btn:active{transform:translateY(1px);}
+.btn-primary{background:var(--teal);color:#fff;box-shadow:0 6px 18px rgba(12,140,130,0.35);}
+.btn-primary:hover,.btn-primary:focus-visible{background:var(--teal-dark);}
+.btn-ghost{background:rgba(255,255,255,0.06);color:#fff;border-color:rgba(255,255,255,0.35);}
+.btn-ghost:hover,.btn-ghost:focus-visible{background:rgba(255,255,255,0.16);}
+.btn-outline{background:transparent;color:var(--navy);border-color:var(--border-strong);}
+.btn-outline:hover,.btn-outline:focus-visible{background:var(--surface-2);border-color:var(--navy);}
+.btn-sm{padding:9px 14px;font-size:13.5px;min-height:38px;border-radius:9px;}
+.btn:focus-visible{outline:2px solid #fff;outline-offset:2px;}
+
+/* ---------- 區塊共用 ---------- */
+section{padding:56px 0;}
+.section-head{margin-bottom:28px;max-width:760px;}
+.section-kicker{
+  color:var(--teal-dark);font-weight:700;font-size:13px;letter-spacing:.06em;
+  text-transform:uppercase;margin-bottom:8px;display:block;
+}
+.section-title{font-size:clamp(21px,2.6vw,28px);margin-bottom:10px;}
+.section-desc{color:var(--muted);font-size:15px;line-height:1.7;}
+.alt-bg{background:var(--surface);}
+
+/* ---------- 任務總覽：篩選與搜尋 ---------- */
+.toolbar{
+  display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
+  margin-bottom:22px;
+}
+.filter-chips{display:flex;flex-wrap:wrap;gap:8px;}
+.chip{
+  padding:9px 15px;border-radius:999px;border:1px solid var(--border-strong);
+  background:var(--surface);color:var(--ink-soft);font-size:13.5px;font-weight:600;
+  transition:all .15s;min-height:40px;
+}
+.chip:hover{border-color:var(--teal);color:var(--teal-dark);}
+.chip.active{background:var(--navy);border-color:var(--navy);color:#fff;}
+.search-wrap{position:relative;flex:1;min-width:220px;max-width:320px;}
+.search-wrap input{
+  width:100%;padding:10px 14px 10px 38px;border-radius:10px;border:1px solid var(--border-strong);
+  font-size:14px;background:var(--surface);color:var(--ink);min-height:40px;
+}
+.search-wrap input:focus{outline:2px solid var(--teal);outline-offset:1px;border-color:var(--teal);}
+.search-wrap .s-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--muted-2);}
+.result-count{font-size:13px;color:var(--muted);margin-bottom:16px;}
+
+/* ---------- 任務卡片 ---------- */
+.task-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px;
+}
+.task-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:20px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:12px;
+  transition:box-shadow .15s, border-color .15s;
+}
+.task-card:hover{box-shadow:var(--shadow);border-color:var(--border-strong);}
+.task-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;}
+.task-tags{display:flex;flex-wrap:wrap;gap:6px;}
+.tag{
+  font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:6px;letter-spacing:.02em;
+}
+.tag-cat{background:var(--teal-light);color:var(--teal-dark);}
+.tag-required{background:var(--red-light);color:var(--red);}
+.tag-optional{background:#EEF1F5;color:var(--muted);}
+.tag-type{background:var(--amber-light);color:var(--amber-dark);}
+.status-badge{
+  font-size:11.5px;font-weight:700;padding:4px 10px;border-radius:999px;white-space:nowrap;flex:none;
+  display:inline-flex;align-items:center;gap:5px;
+}
+.status-badge::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;}
+.status-upcoming{background:var(--amber-light);color:var(--amber-dark);}
+.status-open{background:var(--teal-light);color:var(--teal-dark);}
+.status-overdue{background:var(--red-light);color:var(--red);}
+.status-todo{background:#EEF1F5;color:var(--muted);}
+.status-done{background:var(--teal);color:#fff;}
+.task-name{font-size:17px;font-weight:700;color:var(--navy-ink);line-height:1.45;}
+.task-meta-list{display:flex;flex-direction:column;gap:7px;font-size:13.5px;color:var(--ink-soft);}
+.task-meta-list .mrow{display:flex;gap:8px;}
+.task-meta-list .mrow .mlabel{flex:none;color:var(--muted);width:64px;}
+.task-meta-list .mrow .mval{flex:1;}
+.task-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:6px;}
+.detail-panel{
+  display:none;margin-top:6px;padding-top:16px;border-top:1px dashed var(--border-strong);
+  font-size:14px;color:var(--ink-soft);
+}
+.detail-panel.open{display:block;}
+.qa-item{margin-bottom:14px;}
+.qa-item:last-child{margin-bottom:0;}
+.qa-q{font-weight:700;color:var(--navy-ink);font-size:13.5px;margin-bottom:4px;display:flex;gap:6px;align-items:baseline;}
+.qa-q::before{content:"Q";flex:none;background:var(--navy);color:#fff;font-size:10.5px;font-weight:800;width:17px;height:17px;border-radius:5px;display:inline-flex;align-items:center;justify-content:center;}
+.qa-a{color:var(--ink-soft);line-height:1.7;padding-left:23px;}
+.mini-table{width:100%;border-collapse:collapse;font-size:12.8px;margin-top:6px;}
+.mini-table th,.mini-table td{border:1px solid var(--border);padding:6px 8px;text-align:left;}
+.mini-table th{background:var(--surface-2);color:var(--navy-ink);font-weight:700;}
+.impact-box{
+  background:var(--red-light);border:1px solid #EFC9C2;border-radius:10px;padding:12px 14px;
+  color:#8A362C;font-size:13.5px;margin-top:4px;display:flex;gap:9px;
+}
+.impact-box .icon{flex:none;width:16px;height:16px;margin-top:2px;}
+.checklist-toggle{
+  display:flex;align-items:center;gap:9px;padding:9px 12px;border-radius:9px;
+  border:1px solid var(--border-strong);background:var(--surface-2);font-size:13px;font-weight:600;
+  color:var(--ink-soft);min-height:40px;
+}
+.checklist-toggle input{width:17px;height:17px;accent-color:var(--teal);flex:none;}
+.checklist-toggle.checked{background:var(--teal-light);border-color:var(--teal);color:var(--teal-dark);}
+.link-list{display:flex;flex-direction:column;gap:6px;margin-top:4px;}
+.link-list a{
+  font-size:13.5px;color:var(--teal-dark);font-weight:600;display:inline-flex;align-items:center;gap:6px;
+  text-decoration:none;
+}
+.link-list a:hover{text-decoration:underline;}
+.tba{color:var(--muted);font-style:normal;}
+
+/* ---------- 時間軸 ---------- */
+.timeline{position:relative;padding-left:0;}
+.tl-track{
+  display:flex;flex-direction:column;gap:0;position:relative;
+}
+.tl-track::before{
+  content:"";position:absolute;left:19px;top:6px;bottom:6px;width:2px;
+  background:linear-gradient(var(--border-strong),var(--border-strong));
+}
+.tl-node{display:flex;gap:20px;position:relative;padding-bottom:26px;min-width:0;}
+.tl-node:last-child{padding-bottom:0;}
+.tl-dot{
+  flex:none;width:40px;height:40px;border-radius:50%;background:var(--surface);
+  border:2px solid var(--teal);color:var(--teal-dark);display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:14px;z-index:1;
+}
+.tl-node.pending .tl-dot{border-color:var(--border-strong);color:var(--muted-2);}
+.tl-node.tba .tl-dot{border-color:var(--amber);color:var(--amber-dark);border-style:dashed;}
+.tl-body{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:16px 18px;flex:1;box-shadow:var(--shadow-sm);min-width:0;
+}
+.tl-head{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:flex-start;margin-bottom:6px;}
+.tl-title{font-weight:700;font-size:15.5px;color:var(--navy-ink);min-width:0;}
+.tl-date{font-size:12.5px;color:var(--teal-dark);font-weight:700;}
+.tl-desc{font-size:13.5px;color:var(--muted);line-height:1.6;}
+.tl-flags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;}
+.flag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:5px;}
+.flag-parallel{background:var(--teal-light);color:var(--teal-dark);}
+.flag-sequential{background:#EEF1F5;color:var(--ink-soft);}
+.flag-deadline{background:var(--amber-light);color:var(--amber-dark);}
+.flag-exam{background:var(--red-light);color:var(--red);}
+.flag-tba{background:#F1F1EE;color:var(--muted);}
+
+/* ---------- 近期優先事項 ---------- */
+.upcoming-updated{font-size:12.5px;color:var(--muted-2);margin-bottom:18px;}
+.upcoming-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;}
+.upcoming-col{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;}
+.upcoming-col h3{font-size:14px;margin-bottom:12px;display:flex;align-items:center;gap:8px;}
+.upcoming-col h3 .dot{width:8px;height:8px;border-radius:50%;flex:none;}
+.up-item{padding:10px 0;border-top:1px solid var(--border);font-size:13.5px;}
+.up-item:first-of-type{border-top:none;}
+.up-item .up-name{font-weight:700;color:var(--navy-ink);margin-bottom:3px;}
+.up-item .up-date{color:var(--muted);font-size:12.5px;}
+.up-empty{color:var(--muted-2);font-size:13px;padding:8px 0;}
+
+/* ---------- 考試專區 ---------- */
+.exam-legend{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px;}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink-soft);}
+.legend-item .sw{width:11px;height:11px;border-radius:3px;}
+.exam-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:20px;margin-bottom:16px;box-shadow:var(--shadow-sm);
+}
+.exam-card-head{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:flex-start;margin-bottom:12px;}
+.exam-name{font-size:16.5px;font-weight:700;color:var(--navy-ink);}
+.exam-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;font-size:13.5px;}
+.exam-field .flabel{color:var(--muted);font-size:12px;margin-bottom:3px;font-weight:600;}
+.exam-field .fval{color:var(--ink-soft);line-height:1.6;}
+
+/* ---------- 完整學保課程表 ---------- */
+.sched-day{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px;margin-bottom:12px;box-shadow:var(--shadow-sm);}
+.sched-day-head{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;margin-bottom:10px;}
+.sched-date{font-size:15.5px;font-weight:700;color:var(--navy-ink);}
+.sched-weekday{font-size:12.5px;color:var(--teal-dark);font-weight:600;}
+.sched-table{width:100%;border-collapse:collapse;font-size:13px;}
+.sched-table th,.sched-table td{border:1px solid var(--border);padding:7px 9px;text-align:left;vertical-align:top;}
+.sched-table th{background:var(--surface-2);color:var(--navy-ink);font-weight:700;font-size:12px;white-space:nowrap;}
+.sched-table td.sched-time{white-space:nowrap;font-weight:600;color:var(--ink-soft);}
+.sched-badge{display:inline-block;padding:1px 8px;border-radius:99px;font-size:11px;font-weight:700;margin-right:4px;}
+.sched-badge.med5{background:var(--teal-light);color:var(--teal-dark);}
+.sched-badge.med6{background:var(--amber-light);color:var(--amber-dark);}
+.sched-badge.all{background:var(--red-light);color:var(--red);}
+.sched-holiday td{color:var(--muted);font-style:italic;}
+.sched-empty{color:var(--muted);text-align:center;padding:24px 0;}
+
+/* ---------- 我的完成度 ---------- */
+.progress-card{
+  background:linear-gradient(135deg,var(--navy) 0%, var(--navy-2) 100%);
+  border-radius:var(--radius-lg);padding:28px;color:#fff;margin-bottom:24px;
+  display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;
+}
+.progress-stat{display:flex;flex-direction:column;gap:6px;}
+.progress-num{font-size:38px;font-weight:800;line-height:1;}
+.progress-label{font-size:13px;color:#C9D5E5;}
+.progress-bar-wrap{flex:1;min-width:200px;}
+.progress-bar-track{height:10px;border-radius:999px;background:rgba(255,255,255,0.15);overflow:hidden;}
+.progress-bar-fill{height:100%;background:linear-gradient(90deg,var(--teal),#57C6BA);border-radius:999px;transition:width .3s;}
+.progress-note{
+  background:var(--amber-light);border:1px solid #E9D3A4;border-radius:10px;
+  padding:12px 16px;font-size:13px;color:var(--amber-dark);margin-bottom:20px;
+  display:flex;gap:9px;
+}
+.progress-note .icon{flex:none;width:16px;height:16px;margin-top:2px;}
+.progress-checklist{display:flex;flex-direction:column;gap:0;}
+.progress-group{margin-bottom:22px;}
+.progress-group h4{font-size:13.5px;color:var(--teal-dark);margin-bottom:10px;letter-spacing:.02em;}
+.pcheck-row{
+  display:flex;align-items:center;gap:12px;padding:11px 4px;border-bottom:1px solid var(--border);
+  font-size:14px;
+}
+.pcheck-row:last-child{border-bottom:none;}
+.pcheck-row input{width:19px;height:19px;accent-color:var(--teal);flex:none;}
+.pcheck-row label{flex:1;color:var(--ink-soft);cursor:pointer;}
+.pcheck-row.done label{color:var(--muted-2);text-decoration:line-through;}
+.progress-actions{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap;}
+
+/* ---------- FAQ ---------- */
+.faq-list{display:flex;flex-direction:column;gap:10px;}
+.faq-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;}
+.faq-q{
+  width:100%;text-align:left;background:none;border:none;padding:17px 20px;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  font-size:15px;font-weight:700;color:var(--navy-ink);min-height:48px;
+}
+.faq-q .plus{flex:none;width:22px;height:22px;border-radius:6px;background:var(--teal-light);color:var(--teal-dark);
+  display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;transition:transform .2s;}
+.faq-item.open .plus{transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;}
+.faq-a-inner{padding:0 20px 18px;font-size:14px;color:var(--ink-soft);line-height:1.75;}
+
+/* ---------- 頁尾 ---------- */
+footer{background:var(--navy-ink);color:#C9D5E5;padding:44px 0 28px;}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px;margin-bottom:28px;}
+.footer-col h4{color:#fff;font-size:13.5px;margin-bottom:10px;letter-spacing:.02em;}
+.footer-col p,.footer-col li{font-size:13.5px;color:#AEBBCE;line-height:1.9;}
+.disclaimer{
+  border-top:1px solid rgba(255,255,255,0.12);padding-top:20px;font-size:12.5px;color:#8A98AE;line-height:1.8;
+}
+.disclaimer b{color:#DCE4EF;}
+
+/* ---------- 回到頂端 ---------- */
+.back-to-top{
+  position:fixed;bottom:22px;right:22px;width:48px;height:48px;border-radius:50%;
+  background:var(--navy);color:#fff;border:none;box-shadow:var(--shadow-lg);
+  display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;
+  transition:opacity .2s, transform .2s;z-index:90;
+}
+.back-to-top.show{opacity:1;pointer-events:auto;}
+.back-to-top:hover{transform:translateY(-3px);}
+
+/* ---------- 空狀態 ---------- */
+.empty-state{
+  text-align:center;padding:48px 20px;color:var(--muted);
+  background:var(--surface);border:1px dashed var(--border-strong);border-radius:var(--radius);
+}
+
+/* ---------- 手機版 ---------- */
+@media (max-width:860px){
+  .nav-links{
+    position:fixed;top:64px;left:0;right:0;bottom:0;background:var(--bg);
+    flex-direction:column;align-items:stretch;padding:16px;gap:4px;
+    transform:translateX(100%);transition:transform .22s ease;overflow-y:auto;
+  }
+  .nav-links.open{transform:translateX(0);}
+  .nav-links a{padding:15px 14px;font-size:16px;border-bottom:1px solid var(--border);border-radius:0;}
+  .nav-toggle{display:flex;}
+  section{padding:40px 0;}
+  .hero{padding:36px 0 44px;}
+  .progress-card{flex-direction:column;align-items:stretch;}
+}
+@media (max-width:480px){
+  .container{padding:0 16px;}
+  .topnav-inner{padding:0 16px;}
+  .hero-actions .btn{flex:1;}
+  .task-grid{grid-template-columns:1fr;}
+}
+
+/* ---------- 列印樣式 ---------- */
+@media print{
+  .topnav,.hero-actions,.back-to-top,.toolbar,.task-actions .btn-outline,
+  .progress-actions,.nav-toggle,#clearProgressBtn,.checklist-toggle,.pcheck-row input{display:none !important;}
+  body{background:#fff;}
+  .hero{background:#fff !important;color:#000 !important;}
+  .hero::after{display:none !important;}
+  .hero h1,.hero-sub,.eyebrow{color:#000 !important;}
+  .hero-pill{background:#fff !important;border:1px solid #999 !important;color:#000 !important;}
+  .hero-pill b{color:#000 !important;}
+  .hero-alert,#hero-next-event{background:#fff !important;border:1px solid #999 !important;}
+  .hero-alert-title,.hero-alert-body,.hero-next-title,.hero-next-body,
+  .hero-alert .icon,#hero-next-event .icon{color:#000 !important;}
+  section{padding:18px 0;}
+  .detail-panel{display:block !important;}
+  a{color:#000;text-decoration:underline;}
+  footer{background:#fff !important;color:#000 !important;}
+  footer *{color:#000 !important;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================ 導覽列 ============================================================ -->
+<nav class="topnav">
+  <div class="topnav-inner">
+    <div class="brand">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span>三軍總醫院教學部
+        <small>115學年度 UGY CBME 學習任務導航</small>
+      </span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">首頁</a></li>
+      <li><a href="#overview">任務總覽</a></li>
+      <li><a href="#timeline">完成路徑</a></li>
+      <li><a href="#upcoming">近期優先</a></li>
+      <li><a href="#exams">考試專區</a></li>
+      <li><a href="#schedule">完整課表</a></li>
+      <li><a href="#progress">我的進度</a></li>
+      <li><a href="#faq">常見問題</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="開啟選單" aria-expanded="false" aria-controls="navLinks">
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============================================================ HERO ============================================================ -->
+<header class="hero" id="hero">
+  <div class="container hero-inner">
+    <span class="eyebrow">三軍總醫院教學部・115學年度 UGY 職前訓練</span>
+    <h1>本學期 CBME 學習任務導航</h1>
+    <p class="hero-sub">
+      Competency-based Medical Education（勝任能力導向醫學教育）—— 這一頁把「開立醫囑測驗要帶什麼」「學習護照怎麼蓋章才算數」
+      「還有幾天要考核心課程」通通整理好，讓你 30 秒看懂全貌、3 分鐘找到下一步。
+    </p>
+    <div class="hero-meta">
+      <span class="hero-pill">適用學年度：<b>115學年度</b></span>
+      <span class="hero-pill">適用對象：<b>UGY 實習醫學生（五年級起）</b></span>
+      <span class="hero-pill">課程期間：<b>115年8月6日 起 ～ 116年4月22日</b>（依各項課程實際時程）</span>
+      <span class="hero-pill">資料來源：<b>教學部「115學年 UGY 職前訓練 CBME」簡報 V1</b></span>
+    </div>
+
+    <div class="hero-alert">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.29 3.86l-8.18 14.18A2 2 0 0 0 3.82 21h16.36a2 2 0 0 0 1.71-3.03L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+      <div>
+        <div class="hero-alert-title">本學年最重要提醒</div>
+        <div class="hero-alert-body">
+          學習護照必須由「實際在場監督操作」的醫師本人簽核。經查獲私自蓋章、找非監督醫師蓋章或整份護照找同一人蓋滿，
+          整份護照將以 <b>0 分計算</b>，並依偽造文書相關校規移送學校辦理。所有測驗（核心課程筆試、PE 工作坊、OSCE 工作坊、開立醫囑測驗）
+          均設有一次補考機會，補考成績均低於正式考試成績，請務必掌握每一次正式測驗機會。
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-next-event">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <div>
+        <div class="hero-next-title">最近一個期限／考試</div>
+        <div class="hero-next-body" id="heroNextBody">計算中…</div>
+      </div>
+    </div>
+
+    <div class="hero-actions">
+      <a href="#upcoming" class="btn btn-primary">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+        查看本週任務
+      </a>
+      <a href="#overview" class="btn btn-ghost">查看全部任務</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================ 任務總覽 ============================================================ -->
+<section id="overview" class="alt-bg">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-kicker">Task Overview</span>
+      <h2 class="section-title">你這學期要完成什麼</h2>
+      <p class="section-desc">
+        以下依課程性質分類。每張卡片點「展開詳情」可看到完整的學生行動指南——在哪裡做、如何報名、要帶什麼、
+        怎樣才算完成、沒完成會怎樣、該問誰。找不到預估時間的項目，代表簡報未提供，不會硬湊數字給你。
+      </p>
+    </div>
+    <div class="toolbar">
+      <div class="filter-chips" id="filterChips"></div>
+      <div class="search-wrap">
+        <svg class="s-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="search" id="searchInput" placeholder="搜尋任務名稱、關鍵字…" aria-label="搜尋任務">
+      </div>
+    </div>
+    <p class="result-count" id="resultCount"></p>
+    <div class="task-grid" id="taskGrid"></div>
+  </div>
+</section>
+
+<!-- ============================================================ 學期完成路徑 ============================================================ -->
+<section id="timeline">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-kicker">Learning Journey</span>
+      <h2 class="section-title">學期完成路徑</h2>
+      <p class="section-desc">
+        依實際課程規劃排出的先後順序。標示「可同時進行」的項目彼此不衝突，可以並行推進；
+        標示「待公告」的項目，簡報目前沒有給日期，請留意教學部後續公告。
+      </p>
+    </div>
+    <div class="exam-legend">
+      <span class="legend-item"><span class="sw" style="background:var(--teal)"></span>可同時進行</span>
+      <span class="legend-item"><span class="sw" style="background:var(--ink-soft)"></span>需按順序完成</span>
+      <span class="legend-item"><span class="sw" style="background:var(--amber)"></span>固定截止日期</span>
+      <span class="legend-item"><span class="sw" style="background:var(--red)"></span>固定考試日期</span>
+      <span class="legend-item"><span class="sw" style="background:var(--muted-2)"></span>待公告</span>
+    </div>
+    <div class="timeline"><div class="tl-track" id="timelineTrack"></div></div>
+  </div>
+</section>
+
+<!-- ============================================================ 本週/近期優先事項 ============================================================ -->
+<section id="upcoming" class="alt-bg">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-kicker">This Week</span>
+      <h2 class="section-title">本週／近期優先事項</h2>
+      <p class="section-desc">依你打開網頁當下的日期，自動整理出「現在該做」「即將截止」「即將考試」與「尚待公告」的項目。</p>
+    </div>
+    <p class="upcoming-updated" id="upcomingUpdated"></p>
+    <div class="upcoming-cols" id="upcomingCols"></div>
+  </div>
+</section>
+
+<!-- ============================================================ 考試與能力評量專區 ============================================================ -->
+<section id="exams">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-kicker">Exams &amp; Assessments</span>
+      <h2 class="section-title">考試與能力評量專區</h2>
+      <p class="section-desc">正式評量會直接影響五年級學期成績，請特別留意日期與補考規定。</p>
+    </div>
+    <div class="exam-legend">
+      <span class="legend-item"><span class="sw" style="background:var(--navy)"></span>正式評量</span>
+      <span class="legend-item"><span class="sw" style="background:var(--amber)"></span>練習／工作坊課程</span>
+      <span class="legend-item"><span class="sw" style="background:var(--muted-2)"></span>作業／持續性項目</span>
+    </div>
+    <div id="examList"></div>
+  </div>
+</section>
+
+<!-- ============================================================ 完整學保課程表 ============================================================ -->
+<section id="schedule" class="alt-bg">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-kicker">Full Schedule</span>
+      <h2 class="section-title">完整學保課程表</h2>
+      <p class="section-desc">
+        整理自教學部「115-116學保課程輪值表」（2026/08/03 版），依日期列出每一堂學保時段的科部、主題、授課教師與地點，
+        方便直接查某一天要上什麼課、去哪裡上課。預設只顯示醫五（你這屆）的課程；如遇異動請以教學部最新公告為準。
+      </p>
+    </div>
+    <div class="toolbar">
+      <div class="filter-chips" id="scheduleChips"></div>
+      <div class="search-wrap">
+        <svg class="s-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="search" id="scheduleSearch" placeholder="搜尋日期、科部、主題、教師…" aria-label="搜尋課表">
+      </div>
+    </div>
+    <p class="result-count" id="scheduleResultCount"></p>
+    <div id="scheduleList"></div>
+  </div>
+</section>
+
+<!-- ============================================================ 我的完成度 ============================================================ -->
+<section id="progress" class="alt-bg">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-kicker">My Progress</span>
+      <h2 class="section-title">我的完成度</h2>
+      <p class="section-desc">瀏覽器本機版進度勾選，方便你自我管理，不需要登入任何帳號。</p>
+    </div>
+
+    <div class="progress-note">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.29 3.86l-8.18 14.18A2 2 0 0 0 3.82 21h16.36a2 2 0 0 0 1.71-3.03L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+      <span>本區僅儲存在你目前使用的瀏覽器（localStorage），純供個人自我管理提醒使用，<b>不代表教學部或科部的正式認定紀錄</b>。
+      正式完成紀錄仍以學習護照核章、科部評核、測驗成績及教學部系統為準。清除瀏覽器資料或更換裝置將會遺失紀錄。</span>
+    </div>
+
+    <div class="progress-card">
+      <div class="progress-stat">
+        <span class="progress-num" id="progressPercent">0%</span>
+        <span class="progress-label">個人自我管理完成率</span>
+      </div>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-track"><div class="progress-bar-fill" id="progressBarFill" style="width:0%"></div></div>
+      </div>
+      <div class="progress-stat">
+        <span class="progress-num" id="progressCount">0 / 0</span>
+        <span class="progress-label">已勾選項目數／總項目數</span>
+      </div>
+    </div>
+
+    <div class="progress-checklist" id="progressChecklist"></div>
+
+    <div class="progress-actions">
+      <button class="btn btn-outline btn-sm" id="clearProgressBtn">清除本機紀錄</button>
+      <button class="btn btn-outline btn-sm" id="printBtn">列印本頁</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FAQ ============================================================ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-kicker">FAQ</span>
+      <h2 class="section-title">常見問題</h2>
+      <p class="section-desc">只列出資料中可以確認答案的問題；無法確認的一律誠實標示「請洽教學部確認」，不自行猜測。</p>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ============================================================ 頁尾 ============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>主責單位</h4>
+        <p>三軍總醫院教學部（醫學教學科）</p>
+      </div>
+      <div class="footer-col">
+        <h4>協辦單位</h4>
+        <p>婦產部、小兒部、家庭醫學部、精神醫學部、放射診斷部、臨床病理部、內科部、外科部、耳鼻喉部、麻醉部、皮膚部、急診部、骨科部等各必修科部</p>
+      </div>
+      <div class="footer-col">
+        <h4>聯絡方式</h4>
+        <p>教學部實習醫學生組承辦人：謝任翔先生（分機 16973）</p>
+        <p>IV／GAS 課程（4-8靜脈導管、4-10動脈穿刺）：官方帳號 LINE＠302bluse</p>
+        <p>其餘聯絡方式簡報未提供，請洽教學部確認，或依現場公告辦理。</p>
+      </div>
+      <div class="footer-col">
+        <h4>本頁資訊</h4>
+        <p>資料整理日期：2026 年 7 月 31 日</p>
+        <p>資料來源：教學部「115學年 UGY 職前訓練 CBME」簡報 V1（開訓日期 115.08.06）</p>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <b>重要免責說明：</b>本頁面為依教學部簡報內容整理之學生輔助導覽工具，所有課程、測驗及完成規定，
+      仍以教學部最新公告與各科部現場說明為準。若本頁內容與教學部正式公告不符，請一律以教學部公告為準，
+      並儘速通知教學部更新。頁面中所有「待教學單位公告」或「請依最新公告辦理」字樣，代表原始簡報未提供明確資訊，
+      並非本頁遺漏，請勿自行臆測相關規定。
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="回到頂端">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script>
+/* ============================================================================================
+   資料層：所有內容均整理自「115學年 UGY 職前訓練 CBME」簡報（教學部提供）。
+   日期換算：民國115年＝西元2026年；民國116年＝西元2027年。
+   若簡報未提供明確資訊，一律標示為 null／'待教學單位公告'，不進行任何猜測或杜撰。
+   ============================================================================================ */
+(function(){
+"use strict";
+
+var CATEGORIES = [
+  {key:'all', label:'全部任務'},
+  {key:'prep', label:'課前準備'},
+  {key:'elearning', label:'e-learning'},
+  {key:'core-course', label:'核心課程'},
+  {key:'core-skill', label:'核心技能'},
+  {key:'passport', label:'學習護照'},
+  {key:'osce', label:'OSCE／能力評量'},
+  {key:'bonus', label:'加分項目'}
+];
+
+/* ---------------- 任務資料 ---------------- */
+var TASKS = [
+{
+  id:'orientation', name:'出席 CBME 職前訓練說明會', cats:['prep'], required:true, type:'課程',
+  deadline:'2026/08/06（四）', deadlineDate:'2026-08-06', duration:null,
+  criteria:'出席說明會全程，了解本學年 CBME 各項課程規則、成績計算方式與時程安排。',
+  prereq:'無（本學年第一項任務）',
+  nextStep:'依議程參加科部考核說明、CBME 分數計算說明，並開始規劃 68 項核心課程的自主學習進度。',
+  links:[],
+  impact:'錯過說明會可能無法即時掌握成績計算規則與各項期限，仍需自行留意後續公告並補齊資訊。',
+  where:'第一演講廳（依 115-116 學保課程輪值表確認：15:00–16:00 CBME課程及評量方式說明、16:00–17:00 CBME說明）',
+  bring:'不需要特別攜帶物品',
+  confirm:'現場簽到／出席紀錄',
+  ifNot:'缺席／請假請依學校公告之曠課、請假規定辦理，並主動聯繫教學部白育成先生說明原因；請假不代表自動可以補考／補課，實際處理方式會由白先生依請假事由個別評估。',
+  ask:'教學部（醫學教學科林文裕主任開場；請假聯繫：白育成先生）',
+  agenda:[
+    ['15:00–15:10','醫學教學科林文裕主任開場'],
+    ['15:10–15:40','科部考核說明（婦產部、小兒部、臨床病理部、放射診斷部、家庭醫學部、精神醫學部，每部 5 分鐘）'],
+    ['15:40–15:50','休息'],
+    ['其後','CBME 分數計算說明、核心課程＋綜合測驗、身體檢查工作坊、臨床技能工作坊、混成實作、Q&A'],
+  ],
+  note:'簡報原始議程時間標示（1550 之後的時段）與前段時間有重疊，疑似排版誤植，正確時段請以教學部現場公告為準。'
+},
+{
+  id:'core-course-elearning', name:'68 項核心課程線上自主學習', cats:['elearning','core-course'], required:true, type:'e-learning',
+  deadline:'五年級結束前完成所有課程', deadlineDate:null, duration:null,
+  criteria:'於數位學習平台 2.0 完成全部 68 堂核心課程之自主學習。',
+  prereq:'無，開訓後即可開始',
+  nextStep:'先登入平台瀏覽課程總表，依 11 次筆試時程回推每月要讀完的範圍（見「核心課程 11 次紙筆測驗」任務）。',
+  links:[{label:'數位學習平台 2.0（核心課程）', url:'https://eclass.ndmutsgh.edu.tw/course/10727'}],
+  impact:'核心課程佔五年級總成績 10%，測驗成績即為核心課程分數；未完成自學將直接影響測驗表現與分數。',
+  where:'線上（數位學習平台 2.0）',
+  bring:'不適用（線上進行）',
+  confirm:'依測驗成績及平台學習紀錄',
+  ifNot:'簡報未說明未完成自學但仍應試的處理方式，測驗成績仍會依實際表現計算',
+  ask:'教學部',
+  agenda:null, note:null
+},
+{
+  id:'core-course-exam', name:'核心課程紙筆測驗（共 11 次）', cats:['core-course'], required:true, type:'測驗',
+  deadline:'2026/08/27 ～ 2027/04/15（共 11 次，見下方時程）', deadlineDate:'2026-08-27', duration:'每次測驗約 30 分鐘（14:20–14:50）',
+  criteria:'每次測驗 30 題，70 分以上及格。11 次測驗依範圍分批進行。',
+  prereq:'完成對應範圍之核心課程線上自學',
+  nextStep:'對照下方時程表，於學保時間前完成當次範圍的自學，準時到考。',
+  links:[],
+  impact:'核心課程分數＝測驗成績（佔總成績 10%）。不及格可於次週補考一次，補考及格僅得 0.54 分（低於正式及格的 0.9 分）；全數 11 次都到考可再加 0.1 分。',
+  where:'第一演講廳（依 115-116 學保課程輪值表確認）',
+  bring:'紙本測驗，請自備筆',
+  confirm:'測驗成績單／教學部成績紀錄',
+  ifNot:'不及格者可於次週補考一次，補考及格得 0.54 分；補考仍不通過，該次測驗以 0 分計算',
+  ask:'教學部',
+  agenda:[
+    ['第1次','2026/08/27','UM01、UM12、UM23、US01、UP01、UG01'],
+    ['第2次','2026/09/17','UM02、UM24、UM33、US02、UP02、UG02'],
+    ['第3次','2026/10/08','UM03、UM14、UM25、US03、UP03、UG03'],
+    ['第4次','2026/11/12','UM04、UM15、UM26、US04、UP04、UG04'],
+    ['第5次','2026/12/03','UM05、UM16、UM27、US05、UP05、UG05'],
+    ['第6次','2027/01/07','UM06、UM17、UM28、US13、US14、UP06、UG06'],
+    ['第7次','2027/01/21','UM07、UM18、UM29、US06、US15、UP07、UG07'],
+    ['第8次','2027/02/11','UM08、UM19、UM30、US09、US10、UG08'],
+    ['第9次','2027/03/04','UM09、UM20、UM31、UM34、US07、UG09'],
+    ['第10次','2027/03/18','UM10、UM21、UM32、UM35、US16、US08'],
+    ['第11次','2027/04/15','UM11、UM13、UM22、US11、US12、US17'],
+  ],
+  note:'如有變動，教學部將另行公告。遲到 5 分鐘以上不得測驗；補考於學保後（17:20–17:50）實施。'
+},
+{
+  id:'dept-assessment', name:'科部考核（27 項核心技能）', cats:['core-skill'], required:true, type:'實作',
+  deadline:'依各必修科部實習期間安排（簡報未列統一日期）', deadlineDate:null, duration:null,
+  criteria:'於婦產部、小兒部、家醫部、精神部、放射診斷部、臨床病理科實習期間，結合臨床課程完成授課與科部評核。',
+  prereq:'進入對應科部實習',
+  nextStep:'實習期間主動配合科部安排之臨床課程與評核。',
+  links:[],
+  impact:'此為 80 項核心技能之一部分，由各必修科部直接評核，成績反映於各科部之訓練考核（佔總成績 70% 的訓練考核表）。',
+  where:'各必修科部（婦產部4項／小兒部5項／家醫部3項／精神部2項／放射診斷部5項／臨床病理科8項，共27項）',
+  bring:'不需要特別攜帶物品',
+  confirm:'各科部評核紀錄',
+  ifNot:'簡報未說明，請洽各科部或教學部確認',
+  ask:'各必修科部師長／教學部',
+  agenda:null,
+  note:'成績計算表中，科部考核與 ACLS（見下）之個別配分未於「核心技能 20%」四項細目（綜合測驗2%／身體檢查6%／臨床技能6%／混成教學6%）中明列，推測併入各科部訓練考核表（70%）；正確計分方式請洽教學部確認。'
+},
+{
+  id:'comprehensive-course', name:'綜合課程線上學習＋線上課程綜合測驗（14 項技能）', cats:['elearning','core-skill','osce'], required:true, type:'e-learning／測驗',
+  deadline:'測驗日：2027/04/22（四）15:00–17:00 ＠第一演講廳', deadlineDate:'2027-04-22', duration:'測驗 1 小時（40 題），排定時段共 2 小時',
+  criteria:'內科部帶狀課程、外科部／耳鼻喉部／麻醉部／皮膚部／急診部線上課程，共 14 項技能，最終以綜合測驗成績計分（佔核心技能 20% 中的 2%）。',
+  prereq:'完成各負責科部之帶狀課程或線上課程',
+  nextStep:'依下表找到自己負責科部的 e-learning 課號，先完成線上課程，再準備 4/22 綜合測驗。',
+  links:[],
+  impact:'此項佔核心技能 20% 中的 2%。',
+  where:'第一演講廳（測驗）；線上（各科部 e-learning 課程）',
+  bring:'不需要特別攜帶物品',
+  confirm:'測驗成績',
+  ifNot:'無明確及格分數線，依測驗內容與評核老師（專家）判定；缺考請依學校公告之曠課、請假規定辦理，並主動聯繫教學部白育成先生說明原因，是否能補考由白先生依請假事由個別評估。',
+  ask:'內科部／外科部／耳鼻喉部／麻醉部／皮膚部／急診部／教學部（請假聯繫：白育成先生）',
+  agenda:[
+    ['內科部帶狀課程','體液狀態的評量、血液抹片、靜脈輸液的選擇、監控血中藥物濃度、支氣管擴張劑的使用、噴霧劑的使用（共6項）'],
+    ['外科部帶狀或線上課程','傷口的評量、手術室內的輔助工作（共2項）'],
+    ['耳鼻喉部線上課程','喉拭樣的操作（共1項）'],
+    ['麻醉部線上課程','疼痛的測量以及記錄、適當的處理疼痛（共2項）'],
+    ['皮膚部線上課程','皮膚的檢查(1/2)（共1項）'],
+    ['急診部線上課程','檢傷分類、死亡確認（共2項）'],
+  ],
+  note:'⚠️ 資料更新：依 115-116 學保課程輪值表，測驗時段標示為第一演講廳、15:00–17:00（原簡報寫致德堂、15:30–16:30），本頁已改以課表為準，請以教學部最新公告確認。'
+},
+{
+  id:'acls', name:'ACLS 課程與認證', cats:['core-skill','bonus'], required:false, type:'課程／認證',
+  deadline:'五下至六上時授課，六上前通過可加分（梯次時間約於課程開始前一個月由急診部公告）', deadlineDate:null, duration:null,
+  criteria:'完成本院辦理之實習醫學生 ACLS 課程並通過認證（含基本的急救、高階的急救、呼吸道的基本處置）。',
+  prereq:'無',
+  nextStep:'留意急診部於課程開始前約一個月發布的梯次公告（共3～4梯），或自行報名院內、院外班隊。',
+  links:[],
+  impact:'六上前通過本院 ACLS 課程，可加六上總成績 1.5 分；未通過者仍可自行取得院內外班隊證照列入加分。ACLS 亦列於 80 項核心技能之組別3，但於總成績表中未見獨立配分，正確計分方式請洽教學部確認。',
+  where:'本院 ACLS 課程場地（簡報未載明），或自選院內外班隊',
+  bring:'不需要特別攜帶物品',
+  confirm:'ACLS 課程通過證明／證照',
+  ifNot:'未通過本院課程者，可自行報名院內、院外班隊取得證照，同樣列入加分',
+  ask:'急診部（梯次公告）／教學部',
+  agenda:null, note:'梯次時間：約於課程開始前一個月由急診部公告（此為課程負責人提供之補充資訊，非原簡報內容，如有出入請以急診部最新公告為準）。'
+},
+{
+  id:'pe-workshop-course', name:'身體檢查（PE）工作坊系列課程', cats:['core-skill'], required:true, type:'課程',
+  deadline:'2026/08/13 ～ 2026/10/08（詳見下方課表）', deadlineDate:'2026-08-13', duration:'每堂課約 1 小時',
+  criteria:'依課表出席各科部身體診察技巧複習課程，共涵蓋 11 個測驗站對應之技巧；課程通常安排在學保時間，同學應準時出席。',
+  prereq:'無，依課表進行；部分堂與核心課程筆試同日進行',
+  nextStep:'對照下表確認每次上課的科部、技巧與講師，並在臨床實際多加練習——簡報特別提醒「只靠複習課程會不夠」。考試範圍教案可於 e-learning 平台找到。',
+  links:[],
+  impact:'此課程是 PE 工作坊測驗（10/14起）的準備課程，未出席將直接影響跑站測驗表現。',
+  where:'第一演講廳（依 115-116 學保課程輪值表確認）',
+  bring:'不需要特別攜帶物品',
+  confirm:'課程簽到',
+  ifNot:'缺席／請假請依學校公告之曠課、請假規定辦理，並主動聯繫教學部白育成先生說明原因；請假不代表自動可以補課，實際處理方式會由白先生依請假事由個別評估。',
+  ask:'各授課醫師／教學部（請假聯繫：白育成先生）',
+  agenda:[
+    ['2026/08/13 14:00–15:00','大腸直腸外科｜18. 直腸指診（游鈞偉）'],
+    ['2026/08/13 15:00–16:30','醫事法律(1)（王志嘉醫師）'],
+    ['2026/08/20 15:00–16:00','心臟內科｜4. 心血管系統的檢查（鄭書孟）'],
+    ['2026/08/20 16:00–17:00','胸腔內科｜3. 呼吸系統的檢查（孟繁俊）'],
+    ['2026/08/27 14:20–14:50','核心課程第1次筆試'],
+    ['2026/08/27 15:00–16:00','婦產部｜病史詢問大堂課（黃莊彥）'],
+    ['2026/08/27 16:00–17:00','病史詢問前測（紙本）'],
+    ['2026/09/02 全天','開立醫囑考試（教學部，詳細梯次另行公告）'],
+    ['2026/09/03','軍人節，不實施'],
+    ['2026/09/10 15:00–16:00','眼科部｜9. 眼睛的檢查（李榮基）'],
+    ['2026/09/10 16:00–17:00','耳鼻喉科｜10. 耳朵的檢查／12. 咽喉的檢查（邱逢翔）'],
+    ['2026/09/17 14:20–14:50','核心課程第2次筆試'],
+    ['2026/09/17 15:00–16:00','耳鼻喉科｜11. 頸部及甲狀腺的檢查（邱逢翔）'],
+    ['2026/09/17 16:00–17:00','一般外科｜13. 乳房檢查（馮安捷）'],
+    ['2026/09/24 15:00–16:00','胃腸科｜14. 腹部的檢查（廖昶虹）'],
+    ['2026/09/24 16:00–17:00','泌尿外科｜15. 腹股溝的檢查／16. 男性生殖系統（顏維晨）'],
+    ['2026/10/01 15:00–16:00','神經科部｜5. 神經系統I的檢查-中樞神經（蔡佳霖）'],
+    ['2026/10/01 16:00–17:00','復健醫學部｜神經系統II的檢查-周邊神經（蘇聿圻）'],
+    ['2026/10/08 14:20–14:50','核心課程第3次筆試'],
+    ['2026/10/08 15:00–17:00','考前練習'],
+    ['2026/10/12 全天','開立醫囑考試補考（教學部，詳細梯次另行公告）'],
+  ],
+  note:'併各站另有「19. 淋巴節的檢查」。上表已依 115-116 學保課程輪值表（2026/08/03）校正各堂課實際日期／時段／講師（與原簡報課表相比，8/13、8/20 兩堂的科部順序有調整，病史詢問前測亦改列於 8/27）；如有變動，請以教學部現場公告為準。'
+},
+{
+  id:'pe-workshop-test', name:'身體檢查（PE）工作坊測驗（11 站）', cats:['osce'], required:true, type:'正式測驗',
+  deadline:'2026/10/14、10/15、10/19、10/20；補考 2026/11/17', deadlineDate:'2026-10-14', duration:null,
+  criteria:'總共 11 站，每站實習總成績 0.5 分；11 站全部完測再加 0.5 分。一站及格得 0.5 分，不及格可補考一次，補考及格得 0.3 分。考試仿 OSCE 國考模式，但多了考官回饋時間：每站 8 分鐘考試＋2 分鐘回饋＋1 分鐘換站，每 6 位同學考完，該診間中場休息 15 分鐘（如需上廁所、喝水，開門告知工作人員即可協助）。',
+  prereq:'完成 PE 工作坊系列複習課程',
+  nextStep:'依考程跑完 11 個測驗站，把握每次複習課程機會並在臨床上多加練習。請依各梯次「報到時間」準時到場、準時開始考試。',
+  links:[],
+  impact:'佔五年級學年總成績 6%。未全部完測則無法取得「全部完測加 0.5 分」的加分。',
+  where:'B1－OSCE 中心／教室',
+  bring:'筆燈、聽診器、叩診槌、白袍（學生證不需攜帶）',
+  confirm:'各站測驗成績單',
+  ifNot:'一站不及格可補考一次，補考及格得 0.3 分（低於正式及格的 0.5 分）；補考仍未過，該站以 0 分計算',
+  ask:'教學部／江宗達醫師（PE 工作坊負責師長）',
+  agenda:[
+    ['1','呼吸系統的檢查'],['2','心血管系統的檢查'],['3','神經系統的檢查-1'],['4','神經系統的檢查-2'],
+    ['5','頸部及甲狀腺的檢查'],['6','耳朵的檢查／咽喉的檢查'],['7','乳房的檢查'],['8','腹部的檢查'],
+    ['9','腹股溝的檢查／男性生殖系統的檢查'],['10','直腸指診的檢查'],['11','眼睛的檢查'],['併各站','淋巴節的檢查'],
+  ],
+  note:null
+},
+{
+  id:'history-taking-lecture', name:'病史詢問大堂課', cats:['core-skill','osce'], required:true, type:'課程',
+  deadline:'2026/08/27 15:00–16:00', deadlineDate:'2026-08-27', duration:'1 小時',
+  criteria:'出席大堂課，完成課程內容說明與虛擬病人系統實作練習。',
+  prereq:'無，OSCE 工作坊第11站之準備課程第一步',
+  nextStep:'完成大堂課後接續同日 16:00–17:00 的病史詢問前測。',
+  links:[], impact:'為病史詢問前測、小班教學與 OSCE 測驗之基礎課程，缺席將影響後續學習銜接。',
+  where:'第一演講廳', bring:'不需要特別攜帶物品', confirm:'課程簽到',
+  ifNot:'缺席／請假請依學校公告之曠課、請假規定辦理，並主動聯繫教學部白育成先生說明原因；請假不代表自動可以補課，實際處理方式會由白先生依請假事由個別評估。', ask:'婦產部（授課：黃莊彥醫師）／教學部（請假聯繫：白育成先生）', agenda:null,
+  note:'依 115-116 學保課程輪值表，8/27 當天課表為 14:20–14:50 核心課程第1次筆試 → 15:00–16:00 婦產部病史詢問大堂課（黃莊彥） → 16:00–17:00 病史詢問前測，三項連續於同一時段舉行。'
+},
+{
+  id:'history-taking-pretest', name:'病史詢問前測', cats:['core-skill'], required:true, type:'前測',
+  deadline:'2026/08/27 16:00–17:00', deadlineDate:'2026-08-27', duration:'1 小時（依課表標示為紙本測驗）',
+  criteria:'依 115-116 學保課程輪值表標示為「病史詢問前測(紙本)」。',
+  prereq:'完成病史詢問大堂課',
+  nextStep:'完成前測後進入 10 月小班教學，並準備 11/20 後測。',
+  links:[], impact:'前測為課程進度追蹤用途，無明確及格分數線，依內容與評核老師（專家）判定。',
+  where:'第一演講廳', bring:'紙本測驗，請自備筆', confirm:'測驗紀錄',
+  ifNot:'缺席／請假請依學校公告之曠課、請假規定辦理，並主動聯繫教學部白育成先生說明原因；請假不代表自動可以補測，實際處理方式會由白先生依請假事由個別評估。', ask:'教學部（請假聯繫：白育成先生）', agenda:null,
+  note:'⚠️ 資料更新：依 115-116 學保課程輪值表（2026/08/03），前測實際排定於 2026/08/27 16:00–17:00、形式為「紙本」，與先前依簡報推測之「9/16、虛擬病人系統操作每人8分鐘」不同；本頁已改以課表為準，若學校另有系統操作測驗安排，請以教學部最新公告或現場說明為準。'
+},
+{
+  id:'history-taking-smallgroup', name:'病史詢問小班教學', cats:['core-skill'], required:true, type:'課程',
+  deadline:'2026年10月（分10組，10位教師分別安排課程）', deadlineDate:'2026-10-01', duration:null,
+  criteria:'依分組於10月參加指定教師之小班教學課程。',
+  prereq:'完成病史詢問前測',
+  nextStep:'依分組結果參加指定教師課程，準備11/20後測。',
+  links:[], impact:'為病史詢問後測與 OSCE 測驗（第11站）之準備課程。',
+  where:'依分組教師安排（簡報未逐一列出）', bring:'不需要特別攜帶物品', confirm:'課程簽到',
+  ifNot:'缺席／請假請依學校公告之曠課、請假規定辦理，並主動聯繫教學部白育成先生說明原因；請假不代表自動可以補課，實際處理方式會由白先生依請假事由個別評估。', ask:'指定授課教師／教學部（請假聯繫：白育成先生）', agenda:null, note:null
+},
+{
+  id:'history-taking-posttest', name:'病史詢問後測', cats:['core-skill'], required:true, type:'後測',
+  deadline:'2026/11/20', deadlineDate:'2026-11-20', duration:'每人 8 分鐘（系統操作）',
+  criteria:'以虛擬病人系統操作，每人測驗 8 分鐘。',
+  prereq:'完成病史詢問小班教學',
+  nextStep:'完成後測後準備 12/18–12/24 臨床技能（OSCE）工作坊測驗第11站（病史詢問）。',
+  links:[], impact:'為 OSCE 工作坊測驗前之最後準備關卡，無明確及格分數線，依內容與評核老師（專家）判定。',
+  where:'OSCE（依課表標示；詳細梯次另行公告，確切教室簡報未載明）', bring:'不需要特別攜帶物品', confirm:'系統操作紀錄',
+  ifNot:'缺席／請假請依學校公告之曠課、請假規定辦理，並主動聯繫教學部白育成先生說明原因；請假不代表自動可以補測，實際處理方式會由白先生依請假事由個別評估。', ask:'教學部（請假聯繫：白育成先生）', agenda:null, note:null
+},
+{
+  id:'ortho-cast-course', name:'骨科部石膏教學課程', cats:['core-skill'], required:true, type:'課程',
+  deadline:'2026/08/05 ～ 2026/12/09（每兩週一次，共10梯）', deadlineDate:'2026-08-05', duration:'每次 1 小時（07:00–08:00）',
+  criteria:'分10梯，每梯13–15人（含當時段骨科實習同學最多5位）；上課前務必先看完教學影片（課號72413）。',
+  prereq:'建議先看完線上教學影片',
+  nextStep:'觀看教學影片後，依梯次於禮拜三清晨到 W12 第1護理站上課，準備 OSCE 工作坊第10站（骨折的固定處理）。',
+  links:[{label:'骨科石膏教學影片（課號 72413）', url:'https://elearning2.ndmctsgh.edu.tw/course/72413'}],
+  impact:'為 OSCE 工作坊測驗第10站「骨折的固定處理」之準備課程。',
+  where:'W12 第1護理站', bring:'不需要特別攜帶物品', confirm:'課程簽到',
+  ifNot:'一般缺席／請假請依學校公告之曠課、請假規定辦理，並主動聯繫教學部白育成先生說明原因；本課程排課邏輯（依骨科輪訓梯次安排）另請與骨科部確認，是否能補課由白先生與骨科部依請假事由個別評估。', ask:'骨科部／教學部（請假聯繫：白育成先生）',
+  agenda:[['授課日期','8/5、8/19、9/2、9/16、9/30、10/14、10/28、11/11、11/25、12/9（每兩週一次，禮拜三 07:00–08:00）']],
+  note:'此課程每梯以當時段輪訓骨科之同學優先（每梯最多5位），非輪訓骨科同學不一定排得到課；但 OSCE 工作坊第10站「骨折的固定處理」為所有人必考站別，未輪到本課程的同學務必自行觀看教學影片（課號72413）並自主練習石膏固定技巧。'
+},
+{
+  id:'osce-workshop-test', name:'臨床技能（OSCE）工作坊測驗（12 站）', cats:['osce'], required:true, type:'正式測驗',
+  deadline:'2026/12/18 ～ 2026/12/24；補考 2027/01/26', deadlineDate:'2026-12-18', duration:null,
+  criteria:'總共 12 站，每站實習總成績 0.5 分。一站及格得 0.5 分，不及格可補考一次，補考及格得 0.36 分。考試仿 OSCE 國考模式，但多了考官回饋時間：每站 8 分鐘考試＋2 分鐘回饋＋1 分鐘換站，每 6 位同學考完，該診間中場休息 15 分鐘（如需上廁所、喝水，開門告知工作人員即可協助）。',
+  prereq:'完成各站對應之線上課程／學保課程／輪訓課程；簡報建議可先行完成學習護照',
+  nextStep:'依考程跑完 12 站，把握每次複習課程機會並在臨床上多加練習。請依各梯次「報到時間」準時到場、準時開始考試。',
+  links:[],
+  impact:'佔五年級學年總成績 6%。',
+  where:'B1－OSCE 中心／教室（僅第11站病史詢問於電腦教室進行）', bring:'筆燈、聽診器、叩診槌、白袍（學生證不需攜帶）', confirm:'各站測驗成績單',
+  ifNot:'一站不及格可補考一次，補考及格得 0.36 分（低於正式及格的 0.5 分）；補考仍未過，該站以 0 分計算',
+  ask:'教學部／黃偉哲醫師（臨床技能工作坊負責師長）',
+  agenda:[
+    ['1','穿脫手術衣及手套','線上'],['2','氣管內管插管（俗稱 on ENDO）','11/12學保'],['3','傷口的縫合（俗稱縫合）','12/3學保'],
+    ['4','傷口的消毒換藥（俗稱換藥）','12/3學保'],['5','醫病溝通','線上'],['6','口述報告的能力（俗稱口頭解釋病歷）','線上'],
+    ['7','靜脈輸液的建立（俗稱 on IV）','線上'],['8','導尿管置入（俗稱 on Foley）','12/10學保'],['9','心電圖操作及判讀（俗稱 on ECG）','12/10學保'],
+    ['10','骨折的固定處理（俗稱打石膏）','骨科輪訓'],['11','病史詢問','線上＋小班教學'],['12','動脈採血（俗稱 GAS）','線上'],
+  ],
+  note:'第10站「骨折的固定處理」為所有人必考站別，即使未輪訓骨科、未排到骨科石膏教學課程，也務必自行觀看教學影片（課號72413）並自主練習。上列「俗稱」為院內學生慣用口語簡稱，僅供對照，正式站別名稱以左側為準。'
+},
+{
+  id:'medication-order-test', name:'開立醫囑測驗（5-3. 開立處方）', cats:['osce','passport'], required:true, type:'正式測驗',
+  deadline:'2026/09/02；補考 2026/10/12', deadlineDate:'2026-09-02', duration:'測驗 20 分鐘，換場 10 分鐘',
+  criteria:'依桌面考試說明與題目，在指定測試病人開立醫囑（10–15項）；實際是就 OSCE 電腦連上 HIS2 系統操作，非紙筆測驗。題型可先上「開立醫囑題型練習」網頁演練，但正式測驗仍為實機操作。',
+  prereq:'完成 5-3. 開立處方之學習護照線上學習與臨床觀摩',
+  nextStep:'① 簽到：依指定梯次時間至「OSCE 會議室」簽到。② 就位：考前 2 分鐘依序至診間門口就位，靜候廣播。③ 測驗：每梯次 20 分鐘，考題已在診間桌面，記得填寫測驗編號。④ 離開：完成醫囑開立並「儲存」後請登出（勿關閉系統）並填寫問卷。',
+  links:[{label:'開立醫囑題型練習', url:'https://sites.google.com/view/cbme115c1/%E6%A0%B8%E5%BF%83%E6%8A%80%E8%83%BD20/%E6%B7%B7%E6%88%90%E5%AF%A6%E4%BD%9C/%E9%96%8B%E7%AB%8B%E9%86%AB%E5%9B%91%E9%A1%8C%E5%9E%8B%E7%B7%B4%E7%BF%92'}],
+  impact:'佔混成實作總分 20%（1.2分）。',
+  where:'B1－OSCE 中心（各診間）；簽到地點為 OSCE 會議室', bring:'不需要特別攜帶物品（請留意簽到時間）', confirm:'測驗成績',
+  ifNot:'可於 2026/10/12 補考；補考仍不通過則以 0 分計算',
+  ask:'教學部', agenda:[['分組','每梯次11–12人，共12梯']], note:'無明確及格分數線，依測驗內容與評核老師（專家）判定。「開立醫囑題型練習」網頁僅供熟悉題型，正式測驗仍是在 OSCE 電腦以 HIS2 系統實機操作。'
+},
+{
+  id:'mixed-elearning', name:'混成實作：線上學習（5 項技能）', cats:['elearning','passport'], required:true, type:'e-learning',
+  deadline:'建議儘早完成，並留意學習護照第一季檢核點（10月底：線上學習5/5）', deadlineDate:'2026-10-31', duration:null,
+  criteria:'於本院 e-learning 系統觀看5項技能之教學影片及教材，熟悉適應症、禁忌症、操作步驟及注意事項。',
+  prereq:'無',
+  nextStep:'依下方課號完成線上學習，作為臨床觀摩與臨床操作前的準備。',
+  links:[],
+  impact:'學習護照要求先完成線上學習，才能進行臨床觀摩與操作；未達第一季檢核標準將被列為預警或輔導對象（見學習護照任務）。',
+  where:'線上（本院 e-learning 系統）', bring:'不適用', confirm:'e-learning 學習紀錄',
+  ifNot:'影響學習護照第一季進度檢核', ask:'教學部；其中 4-8. 靜脈導管的置放（IV）與 4-10. 動脈穿刺的技巧（GAS）課程另有專責窗口，見下方補充說明',
+  agenda:[
+    ['4-8. 靜脈導管的置放','課號 11821'],
+    ['4-10. 動脈穿刺的技巧','課號 56441'],
+    ['4-11. 插鼻胃管的技巧','課號 12528'],
+    ['4-12. 男性導尿管的插入','課號 56443'],
+    ['5-3. 開立處方','E-class 2.0'],
+  ], note:'IV（4-8 靜脈導管的置放）與 GAS（4-10 動脈穿刺的技巧）課程實作場次由 IV／GAS 課程負責人另行開課（各22堂，每堂上限10人，合計可容納126人，名額通常足夠），課程相關問題請洽官方帳號 LINE＠302bluse；其餘技能項目（4-11、4-12、5-3）請依教學部或對應指導醫師規定辦理。'
+},
+{
+  id:'mixed-observation', name:'混成實作：臨床觀摩（5 項技能，各3次）', cats:['passport'], required:true, type:'實作',
+  deadline:'依學習護照檢核點：第二季（1月底）臨床觀摩12/15、第三季（3月底）臨床觀摩15/15', deadlineDate:'2027-01-31', duration:null,
+  criteria:'觀摩上級醫師、護理師操作，並貼上病人貼紙，由上級醫師簽認。',
+  prereq:'完成對應技能之線上學習',
+  nextStep:'IV（4-8）／GAS（4-10）課程屬預約制，請先透過下方報名系統自主報名場次（若所屬科部另有安排且與此衝堂，請以科部安排為主）；因需準備模型、名額有限，若報名後因故不能來，務必於系統或 LINE＠302bluse 取消，讓候補同學能遞補。其餘技能項目依指導資格找對應層級的醫師／護理師觀摩，觀摩後立即請對方於學習護照簽認。',
+  links:[{label:'IV／GAS 課程報名系統', url:'https://script.google.com/macros/s/AKfycbyAIxy63nToGJW9iFxNfukLXkVQYTKsgpAMAbkyqNmfGB7Dnyr7bNannzoVX1uGNLs/exec'}],
+  impact:'學習護照佔混成實作總分 80%（4.8分），技能須「全部完成」才能得分，未全部完成該技能得 0 分。',
+  where:'臨床現場（依科部安排）', bring:'學習護照', confirm:'學習護照上的病人貼紙與醫師簽核',
+  ifNot:'未達檢核標準將被列為預警或輔導對象；IV（4-8）／GAS（4-10）課程臨時不能上課，請至官方帳號 LINE＠302bluse 留言取消以利候補同學遞補，其餘技能項目請依實習單位規定辦理請假', ask:'指導醫師／護理師／教學部（IV／GAS 課程請洽官方帳號 LINE＠302bluse）',
+  agenda:[
+    ['4-8. 靜脈導管的置放（IV）','3次','N1以上護理師'],
+    ['4-10. 動脈穿刺的技巧（GAS）','3次','R1～CR'],
+    ['4-11. 插鼻胃管的技巧','3次','PGY1～CR'],
+    ['4-12. 男性導尿管的插入','3次','PGY1～CR'],
+    ['5-3. 開立處方','3次','PGY1～CR或見習時自行練習'],
+  ], note:'⚠️ 這是最容易出錯的地方：觀摩必須由「對應資格」之醫師／護理師本人在場並簽認，找不具備該資格的人員（例如非對應層級或非師資身分者）簽核，即便對方好心幫忙蓋章，仍屬學習護照重大違規（見「學習護照注意事項」）。若忘記當場核章，IV／GAS 課程可到 B1－OSCE 櫃台說明並出示手機照片佐證，經課程負責人確認後補行認證；其餘技能項目請依實習單位規定辦理。'
+},
+{
+  id:'mixed-operation', name:'混成實作：臨床操作（4 項技能，各3次）', cats:['passport'], required:true, type:'實作',
+  deadline:'依學習護照檢核點：第三季（3月底）臨床操作10/12', deadlineDate:'2027-03-31', duration:null,
+  criteria:'在上級醫師、護理師指導下正確完成臨床操作，並貼上病人貼紙，由指導者確認及回饋並完成簽認。',
+  prereq:'完成對應技能之臨床觀摩',
+  nextStep:'IV（4-8）／GAS（4-10）課程屬預約制，請先透過下方報名系統自主報名場次（若所屬科部另有安排且與此衝堂，請以科部安排為主）；因需準備模型、名額有限，若報名後因故不能來，務必於系統或 LINE＠302bluse 取消，讓候補同學能遞補。把握每週四下午14:00–17:00靜脈導管教具開放時段，及各項目安排之實作機會。',
+  links:[{label:'IV／GAS 課程報名系統', url:'https://script.google.com/macros/s/AKfycbyAIxy63nToGJW9iFxNfukLXkVQYTKsgpAMAbkyqNmfGB7Dnyr7bNannzoVX1uGNLs/exec'}],
+  impact:'學習護照佔混成實作總分 80%（4.8分），技能須「全部完成」才能得分，未全部完成該技能得 0 分。',
+  where:'臨床現場／教具練習室（依項目安排）；IV／GAS 教具操作課程於 B1－OSCE', bring:'學習護照', confirm:'學習護照上的病人貼紙與醫師簽核',
+  ifNot:'未達檢核標準將被列為預警或輔導對象；IV（4-8）／GAS（4-10）課程臨時不能上課，請至官方帳號 LINE＠302bluse 留言取消以利候補同學遞補，其餘技能項目請依實習單位規定辦理請假', ask:'指導醫師／護理師／教學部（IV／GAS 課程請洽官方帳號 LINE＠302bluse）',
+  agenda:[
+    ['4-8. 靜脈導管的置放（IV）','每週四下午14:00–17:00開放教具操作3次（資深護理師當助教）'],
+    ['4-10. 動脈穿刺的技巧（GAS）','3次（2次教具＋1次實作），R1～CR指導'],
+    ['4-11. 插鼻胃管的技巧','3次，PGY1～CR指導'],
+    ['4-12. 男性導尿管的插入','3次，PGY1～CR指導'],
+    ['5-3. 開立處方','2026/09/02於OSCE中心以HIS2系統對測試病人開立指定醫囑進行測驗（即「開立醫囑測驗」任務）'],
+  ], note:'⚠️ 這是最容易出錯的地方：操作必須由「對應資格」之指導醫師／護理師本人在場監督並簽認，找不具備該資格的人員代為蓋章，即便對方好心幫忙，違規蓋章仍會導致整份護照 0 分並移送校規處理。IV／GAS 課程每堂上限10人，各22堂（合計126人容量），名額通常足夠；若忘記當場核章，可到 B1－OSCE 櫃台說明並出示手機照片佐證，經課程負責人確認後補行認證。IV／GAS 報名系統目前免登入即可直接填寫，未來可能改為需登入醫院／學校 Google 帳號，實際規定請以系統畫面說明為準。'
+},
+{
+  id:'passport-checkpoint', name:'學習護照進度檢核點', cats:['passport'], required:true, type:'進度檢核',
+  deadline:'第1次檢查 2027/01/14｜第2次檢查 2027/03/25（依學保課程輪值表）', deadlineDate:'2027-01-14', duration:null,
+  criteria:'依季度檢核線上學習／臨床觀摩／臨床操作完成度，未達標準將被列為預警或輔導對象。',
+  prereq:'持續完成混成實作各階段任務',
+  nextStep:'定期檢視自己的完成進度是否達到「預期目標」欄位標準，避免落入「預警」或「輔導」區間；1/14、3/25 當天 14:20–14:50 學保時段為正式檢查時間。',
+  links:[],
+  impact:'落後進度會被列為預警或輔導對象，可能影響後續學習安排（簡報未說明具體輔導機制內容，請洽教學部確認）。',
+  where:'第一演講廳（依學保課程輪值表；學習護照／教學部追蹤系統同步檢核）', bring:'不適用', confirm:'教學部依護照紀錄檢核',
+  ifNot:'列為預警或輔導對象', ask:'教學部',
+  agenda:[
+    ['第一季（10月底，原簡報標示）','預期目標：線上學習5/5','預警標準：線上學習3/5','輔導標準：線上學習1/5'],
+    ['第1次檢查（2027/01/14，依課表）','預期目標：臨床觀摩12/15','預警標準：線上學習<5/5、臨床觀摩<9/15','輔導標準：線上學習<3/5、臨床觀摩<5/15'],
+    ['第2次檢查（2027/03/25，依課表）','預期目標：臨床觀摩15/15、臨床操作10/12','預警標準：臨床觀摩<12/15、臨床操作<6/12','輔導標準：線上學習<5/5、臨床觀摩<9/15、臨床操作<4/12'],
+  ],
+  note:'⚠️ 資料更新：依 115-116 學保課程輪值表，僅查到「混成學習護照1th 檢查」（2027/01/14）與「2th 檢查」（2027/03/25）兩次排入學保時段的正式檢查，時間點與原簡報所述「第二季1/31、第三季3/31」相近，故以課表日期取代；原簡報「第一季10月底」對應的檢查場次，課表中沒有查到相符的排定活動，此列預期目標仍保留供自我進度追蹤參考，但確切是否仍有集合檢核，請洽教學部確認。'
+},
+{
+  id:'medical-record', name:'病歷寫作（每月繳交，加分項目）', cats:['bonus'], required:false, type:'作業',
+  deadline:'每月依規範繳交，抽審期間為五年級至六年級上學期', deadlineDate:null, duration:null,
+  criteria:'依「三軍總醫院年輕醫師暨實習醫學生病歷寫作規範」書寫病歷，教學部每學期抽審每位學生10本病歷評分。',
+  prereq:'無',
+  nextStep:'每月依規範按時完成病歷書寫（含入院紀錄、病程紀錄、Weekly Summary等），留意 Copy paste 比例不宜過高。',
+  links:[],
+  impact:'合格病歷每份加0.35分，單學期上限3.5分。實習醫學生病歷寫作能力（含病歷寫作）應達EPA Level 4以上（12項以上評核達佳）。',
+  where:'依科部病歷系統書寫', bring:'不適用', confirm:'教學部抽審評分結果',
+  ifNot:'未達規範可能影響加分項目分數及EPA等級評核，請洽教學部確認',
+  ask:'教學部／科部主治醫師',
+  agenda:null, note:null
+},
+];
+
+/* ---------------- FAQ 資料 ---------------- */
+var FAQS = [
+  {q:'我不知道自己是否完成怎麼辦？', a:'可以利用本頁「我的完成度」勾選個人進度作為自我提醒，但這僅是個人記錄工具。正式完成紀錄仍以學習護照核章、科部評核與教學部測驗成績為準，如有疑問請直接洽教學部確認。'},
+  {q:'前測或 e-learning 沒完成，可以先報名／參加後續課程嗎？', a:'簡報未明確規範一般情況下的先後要求，但以病史詢問課程為例，流程明確為「大堂課→前測→小班教學→後測→OSCE測驗」，建議依課程規劃的順序完成，避免影響後續學習銜接。其餘項目若不確定，請洽教學部確認。'},
+  {q:'課程額滿後怎麼辦？', a:'以 IV（4-8靜脈導管的置放）／GAS（4-10動脈穿刺的技巧）課程為例，每堂上限10人，兩門課程合計開課44堂（各22堂），可容納126名學生，名額通常足夠，實際上很少發生額滿的情形。其他科部課程的額滿規定，簡報未提供，請依各實習單位規定辦理。'},
+  {q:'候補成功如何得知？', a:'IV／GAS 課程名額通常充足，較少需要候補；若真的額滿需要候補，請洽官方帳號 LINE＠302bluse 詢問。其他科部課程簡報未提供相關規定，請洽該科部或教學部確認。'},
+  {q:'臨時不能上課怎麼取消？', a:'IV／GAS 課程請至官方帳號 LINE＠302bluse 留言取消，這樣候補的同學才能遞補上；其他科部課程請依各實習單位規定辦理請假／取消程序。'},
+  {q:'學習護照忘記核章怎麼辦？', a:'學習護照必須由「實際在場監督操作」的醫師本人親自簽核，嚴禁找非監督醫師蓋章、整份護照找同一人蓋章，或未經許可私自蓋章。經查獲上述情形，整份護照將以0分計算，並以偽造文書移送學校依校規辦理，請務必在操作完成當下立即請監督醫師簽核。若真的忘記，以 IV／GAS 課程為例，可到 B1－OSCE 櫃台說明情況並出示手機照片作為佐證，經課程負責人確認後可補行認證；其他科部課程請依實習單位規定辦理。'},
+  {q:'錯過期限或缺考怎麼辦？', a:'核心課程測驗、PE工作坊測驗、OSCE工作坊測驗、開立醫囑測驗均設有一次補考機會（詳見各測驗項目說明），補考成績均低於正式考試成績。補考仍然沒有通過的話，該項測驗即以 0 分計算，這是明確的既定規則。'},
+  {q:'網頁上的個人勾選是否等同正式完成紀錄？', a:'不是。「我的完成度」僅儲存在你目前使用的瀏覽器（localStorage），純供個人自我管理，不會回傳教學部系統，也不代表教學部或科部的正式認定紀錄。正式紀錄以學習護照核章、科部評核與測驗成績為準。'},
+  {q:'我要向哪個單位詢問？', a:'一般問題請洽教學部實習醫學生組承辦人謝任翔先生（分機16973）。IV（4-8靜脈導管的置放）／GAS（4-10動脈穿刺的技巧）課程請洽官方帳號 LINE＠302bluse。各工作坊或課程的個別負責師長，可參考本頁各任務詳情中的「該問誰」欄位（例如：ACLS課程梯次—急診部；身體檢查工作坊—江宗達醫師；臨床技能工作坊—黃偉哲醫師；混成教學—林文裕主任、陳昕慧醫師）。'},
+];
+
+/* ---------------- 學期完成路徑（時間軸節點） ---------------- */
+var TIMELINE = [
+  {title:'了解本學年 CBME 規則', date:'2026/08/06', desc:'出席職前訓練說明會，掌握成績計算方式與各項課程時程。', flags:['sequential']},
+  {title:'開始 68 項核心課程自學＋混成實作 5 項技能線上學習', date:'開訓後即可開始', desc:'兩者皆為線上自學，可同時進行，越早開始越從容。', flags:['parallel']},
+  {title:'依序完成 11 次核心課程紙筆測驗', date:'2026/08/27 起至 2027/04/15', desc:'貫穿全年，每月約1次，需準時到考，可與其他課程並行。', flags:['parallel','exam']},
+  {title:'參加 PE 工作坊複習課程＋OSCE 工作坊課程（含骨科石膏、病史詢問系列）', date:'2026/08/13 ～ 2026/12/09', desc:'兩系列課程可同時並行推進，依各自課表出席。', flags:['parallel']},
+  {title:'完成開立醫囑測驗（5-3.開立處方）', date:'2026/09/02（補考 10/12）', desc:'混成實作學習護照中唯一的正式測驗項目。', flags:['exam']},
+  {title:'完成 PE 工作坊測驗（11站）', date:'2026/10/14～10/20（補考 11/17）', desc:'需先完成 PE 工作坊複習課程。', flags:['exam','sequential']},
+  {title:'完成病史詢問後測', date:'2026/11/20', desc:'需先完成大堂課與前測(8/27，同日連續進行)→小班教學(10月)。', flags:['sequential']},
+  {title:'持續完成學習護照：臨床觀摩與臨床操作', date:'依課表檢核點：1th 2027/01/14／2th 2027/03/25', desc:'與其他任務同時進行，但需留意檢核標準避免落入預警或輔導名單。', flags:['parallel','deadline']},
+  {title:'完成臨床技能（OSCE）工作坊測驗（12站）', date:'2026/12/18～12/24（補考 2027/01/26）', desc:'涵蓋病史詢問、骨折固定等多項技能的綜合跑站測驗。', flags:['exam','sequential']},
+  {title:'完成核心技能線上課程綜合測驗（14項技能）', date:'2027/04/22（四）15:00–17:00', desc:'內、外、耳鼻喉、麻醉、皮膚、急診科部線上課程的總驗收。', flags:['exam']},
+  {title:'完成核心課程第11次測驗', date:'2027/04/15', desc:'核心課程系列測驗的最後一次。', flags:['exam']},
+  {title:'全年持續：每月繳交病歷寫作、視情況報名 ACLS 課程', date:'五年級起至六年級上學期（ACLS：五下至六上，梯次待公告）', desc:'加分項目，與其他任務並行進行，不影響主線進度。', flags:['parallel','tba']},
+  {title:'確認本學年完成狀態與總成績', date:'依教學部最終公告', desc:'總成績＝訓練考核表70%＋核心課程10%＋核心技能20%＋加分項目，正式結果請以教學部公告為準。', flags:['tba']},
+];
+
+/* ---------------- 考試專區資料（正式評量 / 練習 / 作業） ---------------- */
+var EXAMS = [
+  {
+    kind:'formal', name:'核心課程紙筆測驗（共11次）',
+    date:'2026/08/27 起至 2027/04/15（每次約1個月1次，詳見任務清單）', time:'學保前 14:20–14:50，補考於學保後 17:20–17:50', place:'第一演講廳',
+    checkin:'簡報未載明報到規定，請依現場公告', bring:'紙本測驗，請自備筆',
+    method:'紙本測驗，每次30題', pass:'70分以上及格，得0.9分；不及格可於次週補考，補考及格得0.54分；11次均到考再加0.1分',
+    prep:'依11次測驗時程分批完成對應範圍之核心課程線上自學', absence:'遲到5分鐘以上不得測驗；補考仍不通過，該次測驗以0分計算'
+  },
+  {
+    kind:'formal', name:'身體檢查（PE）工作坊測驗（11站跑站）',
+    date:'2026/10/14、10/15、10/19、10/20', time:'依各梯次報到時間到場，準時開考', place:'B1－OSCE 中心／教室',
+    checkin:'依指定梯次報到時間準時到場、準時考試', bring:'筆燈、聽診器、叩診槌、白袍（學生證不需攜帶）',
+    method:'仿OSCE國考模式跑11站，另加考官回饋：每站8分鐘考試＋2分鐘回饋＋1分鐘換站，每6人考完中場休息15分鐘', pass:'一站及格得0.5分，全部完測再加0.5分；不及格可補考一次（補考及格得0.3分）',
+    prep:'把握每次PE工作坊複習課程機會，並在臨床上盡可能多練習（只靠複習課程會不夠）', absence:'補考日：2026/11/17；補考仍不通過，該站以0分計算'
+  },
+  {
+    kind:'formal', name:'臨床技能（OSCE）工作坊測驗（12站跑站）',
+    date:'2026/12/18 ～ 2026/12/24', time:'依各梯次報到時間到場，準時開考', place:'B1－OSCE 中心／教室（第11站病史詢問於電腦教室）',
+    checkin:'依指定梯次報到時間準時到場、準時考試', bring:'筆燈、聽診器、叩診槌、白袍（學生證不需攜帶）',
+    method:'仿OSCE國考模式跑12站，另加考官回饋：每站8分鐘考試＋2分鐘回饋＋1分鐘換站，每6人考完中場休息15分鐘', pass:'一站及格得0.5分；不及格可補考一次（補考及格得0.36分）',
+    prep:'把握每次複習課程機會，並在臨床上多加練習；建議可先行完成學習護照', absence:'補考日：2027/01/26；補考仍不通過，該站以0分計算'
+  },
+  {
+    kind:'formal', name:'開立醫囑測驗（5-3. 開立處方）',
+    date:'2026/09/02', time:'測驗20分鐘，換場10分鐘（每梯次11–12人，共12梯）', place:'B1－OSCE 中心各診間',
+    checkin:'依指定梯次時間至「OSCE會議室」簽到；考前2分鐘至診間門口就位，靜候廣播', bring:'不需要特別攜帶物品',
+    method:'就OSCE電腦連上HIS2系統，對指定測試病人開立醫囑（10–15項）；可先於「開立醫囑題型練習」網頁熟悉題型，正式測驗仍為實機操作。完成並儲存後請登出（勿關閉）並填寫問卷', pass:'無明確及格分數線，依測驗內容與評核老師（專家）判定',
+    prep:'完成5-3.開立處方之學習護照線上學習與臨床觀摩', absence:'補考日：2026/10/12；補考仍不通過則以0分計算'
+  },
+  {
+    kind:'formal', name:'核心技能線上課程綜合測驗（14項技能）',
+    date:'2027/04/22（四）', time:'15:00–17:00（測驗本身約1小時，40題）', place:'第一演講廳',
+    checkin:'簡報未載明，請依現場公告', bring:'不需要特別攜帶物品',
+    method:'測驗40題，涵蓋內科／外科／耳鼻喉／麻醉／皮膚／急診共14項技能', pass:'無明確及格分數線，依測驗內容與評核老師（專家）判定；此項佔核心技能20%中的2%',
+    prep:'完成各負責科部之帶狀課程或線上課程', absence:'缺考請依學校公告之曠課、請假規定辦理，並聯繫教學部白育成先生說明原因；是否能補考由白先生依請假事由個別評估'
+  },
+  {
+    kind:'formal', name:'病史詢問前測 ／ 後測',
+    date:'前測：2026/08/27｜後測：2026/11/20', time:'前測：16:00–17:00（紙本）｜後測：詳細梯次另行公告', place:'前測：第一演講廳｜後測：OSCE',
+    checkin:'詳細梯次另行公告', bring:'前測：請自備筆（紙本測驗）｜後測：不需要特別攜帶物品',
+    method:'前測依課表標示為紙本測驗；後測形式簡報未載明，請以教學部現場說明為準', pass:'無明確及格分數線，依內容與評核老師（專家）判定，主要用於課程進度追蹤',
+    prep:'前測：完成病史詢問大堂課；後測：完成病史詢問小班教學', absence:'缺席／請假請依學校公告之曠課、請假規定辦理，並聯繫教學部白育成先生說明原因；是否能補測由白先生依請假事由個別評估'
+  },
+  {
+    kind:'practice', name:'身體檢查（PE）工作坊複習課程',
+    date:'2026/08/13 ～ 2026/10/08（詳見任務清單完整課表）', time:'多為每堂1小時（15:00–16:00或16:00–17:00）', place:'第一演講廳',
+    checkin:'依課表出席', bring:'不需要特別攜帶物品',
+    method:'各科部師長複習授課', pass:'非測驗，屬課程性質，用於準備PE工作坊測驗',
+    prep:'無', absence:'缺席／請假請依學校公告之曠課、請假規定辦理，並聯繫教學部白育成先生說明原因；是否能補課由白先生依請假事由個別評估'
+  },
+  {
+    kind:'practice', name:'骨科部石膏教學課程',
+    date:'2026/08/05 ～ 2026/12/09（每兩週一次，共10梯）', time:'07:00–08:00（每次1小時）', place:'W12第1護理站',
+    checkin:'依梯次出席', bring:'上課前務必先看完教學影片（課號72413）',
+    method:'分組演練，每梯13–15人', pass:'非測驗，屬課程性質，為OSCE工作坊第10站的準備課程',
+    prep:'觀看教學影片（連結見任務清單）', absence:'一般缺席／請假請依學校公告之曠課、請假規定辦理，並聯繫教學部白育成先生說明原因；本課程排課邏輯另須與骨科部確認，是否能補課由白先生與骨科部依請假事由個別評估'
+  },
+  {
+    kind:'work', name:'病歷寫作（每月繳交，加分項目）',
+    date:'每月依規範繳交；抽審期間：五年級至六年級上學期', time:'不適用', place:'依科部病歷系統',
+    checkin:'不適用', bring:'不適用',
+    method:'教學部每學期抽審每位學生10本病歷評分', pass:'合格病歷每份加0.35分，單學期上限3.5分；能力應達EPA Level 4以上',
+    prep:'依病歷寫作規範書寫，留意Copy paste比例不宜過高', absence:'非測驗項目，未達規範可能影響加分與EPA評核'
+  },
+];
+
+/* ---------------- 完整學保課程輪值表（115-116學年度，依教學部提供之課表整理） ---------------- */
+var SCHEDULE = [
+  {date:'2026-08-06',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'教學部',topic:'CBME課程及評量方式說明',teacher:'教學部',duty:null},
+  {date:'2026-08-06',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'教學部',topic:'CBME說明',teacher:'教學部',duty:null},
+  {date:'2026-08-06',place:'第3演講廳',audience:'醫六',time:'15:00-16:00',unit:'心臟內科',topic:'心電圖與心臟功能檢查',teacher:'劉文正',duty:'文心'},
+  {date:'2026-08-06',place:'第3演講廳',audience:'醫六',time:'16:00-17:00',unit:'核子醫學部',topic:'核子醫學檢查',teacher:'高峻皓',duty:'文心'},
+  {date:'2026-08-13',place:'第3演講廳',audience:'醫六',time:'15:00-16:00',unit:'麻醉部',topic:'手術前評估與準備',teacher:'楊子賢',duty:'文心'},
+  {date:'2026-08-13',place:'第3演講廳',audience:'醫六',time:'16:00-17:00',unit:'創傷科',topic:'緊急創傷評估',teacher:'邱煜程',duty:'文心'},
+  {date:'2026-08-13',place:'第一演講廳',audience:'醫五',time:'14:00-15:00',unit:'大腸直腸外科',topic:'18. 直腸指診',teacher:'游鈞偉',duty:'申喬'},
+  {date:'2026-08-13',place:'第一演講廳',audience:'醫五',time:'15:00-16:30',unit:'醫學系',topic:'醫事法律(1)',teacher:'王志嘉',duty:'X'},
+  {date:'2026-08-20',place:'第3演講廳',audience:'醫六',time:'15:00-15:50',unit:'整型外科',topic:'燒燙傷緊急處理',teacher:'喬浩禹',duty:'郁棻'},
+  {date:'2026-08-20',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'心臟內科',topic:'4. 心血管系統的檢查',teacher:'鄭書孟',duty:'任翔'},
+  {date:'2026-08-20',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'胸腔內科',topic:'3. 呼吸系統的檢查',teacher:'孟繁俊',duty:'任翔'},
+  {date:'2026-08-27',place:'第一演講廳',audience:'醫五',time:'14:20~14:50',unit:null,topic:'核心測驗第1次筆試',teacher:null,duty:'琇文'},
+  {date:'2026-08-27',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'婦產部',topic:'病史詢問',teacher:'黃莊彥',duty:null},
+  {date:'2026-08-27',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:null,topic:'病史詢問前測(紙本)',teacher:null,duty:null},
+  {date:'2026-08-27',place:'第3演講廳',audience:'醫六',time:'15:00-16:00',unit:'婦產部',topic:'下腹疼痛/陰道分泌物',teacher:'陳宇軒',duty:'文心'},
+  {date:'2026-08-27',place:'第3演講廳',audience:'醫六',time:'16:00-17:00',unit:'婦產部',topic:'月經異常/停經症候群',teacher:'董翔鈞',duty:'文心'},
+  {date:'2026-09-02',place:'OSCE',audience:'醫五',time:'全天',unit:'教學部',topic:'開立醫囑考試',teacher:'教學部',duty:'詳細梯次另行公告'},
+  {date:'2026-09-03',place:null,audience:'全體',time:'停課',unit:null,topic:'停課：九三軍人節',teacher:null,duty:null},
+  {date:'2026-09-10',place:'第3演講廳',audience:'醫六',time:'15:00-16:00',unit:'小兒部',topic:'幼兒虐待/兒童營養',teacher:'王德勳',duty:'文心'},
+  {date:'2026-09-10',place:'第3演講廳',audience:'醫六',time:'16:00-17:00',unit:'小兒部',topic:'預防保健',teacher:'游家祥',duty:'文心'},
+  {date:'2026-09-10',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'眼科部',topic:'9. 眼睛的檢查',teacher:'李榮基',duty:'慶銓'},
+  {date:'2026-09-10',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'耳鼻喉部',topic:'10. 耳朵的檢查、12. 咽喉的檢查',teacher:'邱逢翔',duty:'慶銓'},
+  {date:'2026-09-17',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'風濕免疫科',topic:'風濕免疫科國考複習課程',teacher:'裘喻翔',duty:'慶銓'},
+  {date:'2026-09-17',place:'第一演講廳',audience:'醫五',time:'14:20~14:50',unit:null,topic:'核心測驗第2次筆試',teacher:null,duty:null},
+  {date:'2026-09-17',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'耳鼻喉部',topic:'11. 頸部及甲狀腺的檢查',teacher:'邱逢翔',duty:'郁棻'},
+  {date:'2026-09-17',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'一般外科',topic:'13. 乳房檢查',teacher:'馮安捷',duty:'郁棻'},
+  {date:'2026-09-24',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'感染科',topic:'感染科國考複習課程',teacher:'吳瑞欣',duty:'宛君'},
+  {date:'2026-09-24',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'胃腸科',topic:'14. 腹部的檢查',teacher:'廖昶虹',duty:'申喬'},
+  {date:'2026-09-24',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'泌尿外科',topic:'15. 腹股溝的檢查、男性生殖系統',teacher:'顏維晨',duty:'申喬'},
+  {date:'2026-10-01',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'神經科部',topic:'5. 神經系統Ｉ的檢查(中樞神經)',teacher:'蔡佳霖',duty:'任翔'},
+  {date:'2026-10-01',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'復健醫學部',topic:'5. 神經系統ＩＩ的檢查(周邊神經)',teacher:'蘇聿圻',duty:'任翔'},
+  {date:'2026-10-08',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'腎臟內科',topic:'腎臟內科國考複習課程',teacher:'魏光宇',duty:'任翔'},
+  {date:'2026-10-08',place:'第一演講廳',audience:'醫五',time:'14:20~14:50',unit:null,topic:'核心測驗第3次筆試',teacher:null,duty:null},
+  {date:'2026-10-08',place:'第一演講廳',audience:'醫五',time:'15:00-17:00',unit:'教學部',topic:'考前練習',teacher:'教學部',duty:'X'},
+  {date:'2026-10-12',place:'OSCE',audience:'醫五',time:'全天',unit:'教學部',topic:'開立醫囑考試(補考)',teacher:'教學部',duty:'詳細梯次另行公告'},
+  {date:'2026-10-14',place:'OSCE',audience:'醫五',time:'全天',unit:'教學部',topic:'PE工作坊測驗',teacher:'教學部',duty:'10/14-10/15+10/19-10/20'},
+  {date:'2026-10-15',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'新陳代謝科',topic:'新陳代謝科國考複習課程',teacher:'蘇聖強',duty:'雅彤'},
+  {date:'2026-10-22',place:'第一演講廳',audience:'醫五',time:'15:00-16:30',unit:'醫學系',topic:'醫事法律(2)',teacher:'王志嘉',duty:'X'},
+  {date:'2026-10-29',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'胸腔內科',topic:'胸腔內科國考複習課程',teacher:'梁碩文',duty:'郁棻'},
+  {date:'2026-10-29',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'教學部',topic:'政策宣導與溝通',teacher:'教學部',duty:'X'},
+  {date:'2026-10-29',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'家庭醫學部',topic:'功能狀態的評量',teacher:'趙圓平',duty:'申喬'},
+  {date:'2026-11-05',place:'致德堂',audience:'醫五',time:'15:00-16:30',unit:'醫學系',topic:'醫事法律(3)',teacher:'王志嘉',duty:'X'},
+  {date:'2026-11-05',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'血液腫瘤科',topic:'血液腫瘤科國考複習課程',teacher:'李序麟',duty:'慶銓'},
+  {date:'2026-11-12',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'心臟內科',topic:'心臟內科國考複習課程',teacher:'蔡維哲',duty:'任翔'},
+  {date:'2026-11-12',place:'第一演講廳',audience:'醫五',time:'14:20~14:50',unit:null,topic:'核心測驗第4次筆試',teacher:null,duty:null},
+  {date:'2026-11-12',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'急診部',topic:'氣管內管插管',teacher:'方琬甯',duty:'宛君'},
+  {date:'2026-11-12',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'教學部/醫學系',topic:'六年級選科說明',teacher:'教學部',duty:'X'},
+  {date:'2026-11-17',place:'OSCE',audience:'醫五',time:'全天',unit:'教學部',topic:'PE工作坊測驗(補考)',teacher:'教學部',duty:'X'},
+  {date:'2026-11-19',place:null,audience:null,time:null,unit:null,topic:'TIMMF（活動內容依課表原文標示，簡報未說明，詳情請洽教學部）',teacher:null,duty:null},
+  {date:'2026-11-20',place:'OSCE',audience:'醫五',time:'全天',unit:'教學部',topic:'病史詢問後測',teacher:'教學部',duty:'詳細梯次另行公告'},
+  {date:'2026-11-26',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'胃腸科',topic:'胃腸科國考複習課程',teacher:'廖昶虹',duty:'雅彤'},
+  {date:'2026-11-26',place:'第一演講廳',audience:'醫五',time:'15:00-16:30',unit:'醫學系',topic:'醫事法律(4)',teacher:'王志嘉',duty:'X'},
+  {date:'2026-12-03',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'心臟外科',topic:'心臟外科國考複習課程',teacher:'張瑞宗',duty:'申喬'},
+  {date:'2026-12-03',place:'第一演講廳',audience:'醫五',time:'14:20~14:50',unit:null,topic:'核心測驗第5次筆試',teacher:null,duty:null},
+  {date:'2026-12-03',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'一般外科',topic:'傷口的換藥及包紮',teacher:'李定穎',duty:'宛君'},
+  {date:'2026-12-03',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'整形外科',topic:'傷口的縫合',teacher:'翁御哲(需協助發函)',duty:'宛君'},
+  {date:'2026-12-10',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'泌尿外科',topic:'泌尿外科國考複習課程',teacher:'顏維晨',duty:'郁棻'},
+  {date:'2026-12-10',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'心臟內科',topic:'基礎心電圖的判讀',teacher:'劉文正',duty:'慶銓'},
+  {date:'2026-12-10',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'泌尿外科',topic:'導尿管的插入',teacher:'江佩璋',duty:'慶銓'},
+  {date:'2026-12-17',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'胸腔外科',topic:'胸腔外科國考複習課程',teacher:'吳悌暉',duty:'慶銓'},
+  {date:'2026-12-17',place:'第一演講廳',audience:'醫五',time:'15:00-17:00',unit:'教學部',topic:'考前自主練習',teacher:'教學部',duty:'X'},
+  {date:'2026-12-24',place:'OSCE',audience:'醫五',time:'全天',unit:'教學部',topic:'臨床技能(OSCE)工作坊測驗',teacher:'教學部',duty:'12/18(五)-12/24(四)；詳細梯次另行公告'},
+  {date:'2026-12-31',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'大腸直腸外科',topic:'手術後照護',teacher:'游鈞偉',duty:'郁棻'},
+  {date:'2026-12-31',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'感染科',topic:'抗生素I',teacher:'許智堯',duty:'郁棻'},
+  {date:'2027-01-07',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'小兒外科',topic:'小兒外國考複習課程',teacher:'鄭詠升',duty:'宛君'},
+  {date:'2027-01-07',place:'第一演講廳',audience:'醫五',time:'14:20~14:50',unit:null,topic:'核心測驗第6次筆試',teacher:null,duty:null},
+  {date:'2027-01-07',place:'第一演講廳',audience:'醫五',time:'15:00-16:30',unit:'醫學系',topic:'醫事法律(5)',teacher:'王志嘉',duty:'X'},
+  {date:'2027-01-14',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'大腸直腸外科',topic:'大腸直腸外國考複習課程',teacher:'游鈞偉',duty:'任翔'},
+  {date:'2027-01-14',place:'第一演講廳',audience:'醫五',time:'14:20~14:50',unit:null,topic:'混成學習護照1th 檢查',teacher:null,duty:null},
+  {date:'2027-01-14',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'放射診斷部',topic:'基本影像判讀I(影像判讀)',teacher:'廖威誠',duty:'申喬'},
+  {date:'2027-01-14',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'放射診斷部',topic:'基本影像判讀II(臨床實務)',teacher:'鄭雲聲',duty:'申喬'},
+  {date:'2027-01-21',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'整型外科',topic:'整形外科國考複習課程',teacher:'何裕民',duty:'雅彤'},
+  {date:'2027-01-21',place:'第一演講廳',audience:'醫五',time:'14:20~14:50',unit:null,topic:'核心測驗第7次筆試',teacher:null,duty:null},
+  {date:'2027-01-21',place:'第一演講廳',audience:'醫五',time:'15:00-16:30',unit:'醫學系',topic:'醫事法律(6)',teacher:'王志嘉',duty:'X'},
+  {date:'2027-01-26',place:'OSCE',audience:'醫五',time:'全天',unit:'教學部',topic:'臨床技能(OSCE)工作坊測驗(補考)',teacher:'教學部',duty:'X'},
+  {date:'2027-01-28',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'一般外科',topic:'一般外科國考複習課程',teacher:'伍希元',duty:'申喬'},
+  {date:'2027-01-28',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'心臟外科',topic:'休克(低血容)',teacher:'黃偉哲',duty:'任翔'},
+  {date:'2027-01-28',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'胃腸科',topic:'噁心嘔吐/腹痛',teacher:'廖昶虹',duty:'任翔'},
+  {date:'2027-02-04',place:null,audience:'全體',time:'停課',unit:null,topic:'停課：春節',teacher:null,duty:null},
+  {date:'2027-02-11',place:'第一演講廳',audience:'醫五',time:'14:20~14:50',unit:null,topic:'核心測驗第8次筆試',teacher:null,duty:null},
+  {date:'2027-02-11',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'感染科',topic:'抗生素II',teacher:'黃瑞昌',duty:'宛君'},
+  {date:'2027-02-11',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'麻醉部',topic:'疼痛評估與處置',teacher:'曾偉誠',duty:'宛君'},
+  {date:'2027-02-18',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'神經外科部',topic:'神經外科國考複習課程',teacher:'待安排',duty:'郁棻'},
+  {date:'2027-02-18',place:'第一演講廳',audience:'醫五',time:'15:00-16:30',unit:'醫學系',topic:'醫事法律(7)',teacher:'王志嘉',duty:'X'},
+  {date:'2027-02-25',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'骨科部',topic:'骨科國考複習課程',teacher:'黃則普',duty:'文心'},
+  {date:'2027-02-25',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'神經科部',topic:'意識障礙/認知功能異常',teacher:'王承恩',duty:'慶銓'},
+  {date:'2027-02-25',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'臨床病理科',topic:'檢驗醫囑開立及報告查詢',teacher:'顏瓊姿',duty:'慶銓'},
+  {date:'2027-03-04',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'婦產部',topic:'婦產國考複習課程',teacher:'黃莊彥',duty:'慶銓'},
+  {date:'2027-03-04',place:'第一演講廳',audience:'醫五',time:'14:20~14:50',unit:null,topic:'核心測驗第9次筆試',teacher:null,duty:null},
+  {date:'2027-03-04',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'心臟內科',topic:'胸痛/心衰竭',teacher:'劉文正',duty:'郁棻'},
+  {date:'2027-03-04',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'腎臟內科',topic:'電解質/酸鹼異常',teacher:'陳璽之',duty:'郁棻'},
+  {date:'2027-03-11',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'小兒部',topic:'小兒國考複習課程',teacher:'方泓翔',duty:'雅彤'},
+  {date:'2027-03-11',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'皮膚部',topic:'紅疹(純線上課程)',teacher:'洪誌聰',duty:'申喬'},
+  {date:'2027-03-11',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'一般外科',topic:'一般外科腹部急症',teacher:'徐國峯',duty:'申喬'},
+  {date:'2027-03-18',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'眼科部',topic:'眼科國考複習課程',teacher:'謝筠修',duty:'任翔'},
+  {date:'2027-03-18',place:'第一演講廳',audience:'醫五',time:'14:20~14:50',unit:null,topic:'核心測驗第10次筆試',teacher:null,duty:null},
+  {date:'2027-03-18',place:'第一演講廳',audience:'醫五',time:'15:00-16:30',unit:'醫學系',topic:'醫事法律(8)',teacher:'王志嘉',duty:'X'},
+  {date:'2027-03-25',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'耳鼻喉部',topic:'耳鼻喉科國考複習課程',teacher:'上官瑋娟',duty:'文心'},
+  {date:'2027-03-25',place:'第一演講廳',audience:'醫五',time:'14:20~14:50',unit:null,topic:'混成學習護照2th 檢查',teacher:null,duty:null},
+  {date:'2027-03-25',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'新陳代謝科',topic:'高低血糖',teacher:'蘇聖強',duty:'任翔'},
+  {date:'2027-03-25',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'急診部',topic:'呼吸道處置',teacher:'方琬甯',duty:'任翔'},
+  {date:'2027-04-01',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'皮膚部',topic:'皮膚國考複習課程',teacher:'劉禧齡',duty:'申喬'},
+  {date:'2027-04-01',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'精神醫學部',topic:'精神狀態的檢查及意識狀態的評量',teacher:'黃郁絜',duty:'宛君'},
+  {date:'2027-04-01',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'臨床病理科',topic:'輸血的處理',teacher:'黎嘉君',duty:'宛君'},
+  {date:'2027-04-08',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'神經科部',topic:'神經內科國考複習課程',teacher:'吳維庭',duty:'郁棻'},
+  {date:'2027-04-08',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'營養部',topic:'病人飲食',teacher:'王秀惠',duty:'慶銓'},
+  {date:'2027-04-08',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'臨床藥學部',topic:'臨床藥物使用',teacher:'張櫻蘋',duty:'慶銓'},
+  {date:'2027-04-15',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'家庭醫學部',topic:'家庭醫學科國考複習課程',teacher:'林育任',duty:'申喬'},
+  {date:'2027-04-15',place:'第一演講廳',audience:'醫五',time:'14:20~14:50',unit:null,topic:'核心測驗第11次筆試',teacher:null,duty:null},
+  {date:'2027-04-15',place:'第一演講廳',audience:'醫五',time:'15:00-16:30',unit:'醫學系',topic:'醫事法律(9)',teacher:'王志嘉',duty:'X'},
+  {date:'2027-04-22',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'麻醉部',topic:'麻醉科國考複習課程',teacher:'黃貽暄',duty:'郁棻'},
+  {date:'2027-04-22',place:'第一演講廳',audience:'醫五',time:'15:00-17:00',unit:null,topic:'CBME-綜合測驗',teacher:'教學部',duty:'X'},
+  {date:'2027-04-29',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'精神醫學部',topic:'精神醫學國考複習課程',teacher:'陳琬亭',duty:'雅彤'},
+  {date:'2027-04-29',place:'第一演講廳',audience:'醫五',time:'15:00-16:00',unit:'血液腫瘤科',topic:'安寧照護',teacher:'程敏琪',duty:'任翔'},
+  {date:'2027-04-29',place:'第一演講廳',audience:'醫五',time:'16:00-17:00',unit:'課程預備時段',topic:'課程預備時段/六年級職前說明',teacher:'教學部',duty:'X'},
+  {date:'2027-05-06',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'放射診斷部',topic:'放射診斷國考複習課程',teacher:'陶菀婷',duty:'申喬'},
+  {date:'2027-05-13',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'急診部',topic:'急診國考複習課程',teacher:'周宜萱',duty:'郁棻'},
+  {date:'2027-05-20',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'放射腫瘤部',topic:'放射腫瘤國考複習課程',teacher:'陳信延',duty:'慶銓'},
+  {date:'2027-05-27',place:'第3演講廳',audience:'醫六',time:'15:00-16:30',unit:'復健部',topic:'復健科國考複習課程',teacher:'陳明澤',duty:'文心'},
+];
+
+/* ---------------- 個人完成度勾選清單（依分類分組） ---------------- */
+var STORAGE_KEY = 'cbme_ugy_115_progress_v1';
+
+/* ==================================================================== 渲染邏輯 ==================================================================== */
+var $ = function(sel, ctx){ return (ctx||document).querySelector(sel); };
+var $$ = function(sel, ctx){ return Array.prototype.slice.call((ctx||document).querySelectorAll(sel)); };
+
+function catLabel(key){
+  for(var i=0;i<CATEGORIES.length;i++){ if(CATEGORIES[i].key===key) return CATEGORIES[i].label; }
+  return key;
+}
+
+function getProgress(){
+  try{
+    var raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : {};
+  }catch(e){ return {}; }
+}
+function setProgress(obj){
+  try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(obj)); }catch(e){}
+}
+function toggleProgress(id){
+  var p = getProgress();
+  p[id] = !p[id];
+  setProgress(p);
+  refreshProgressUI();
+}
+
+/* ---- 日期輔助 ---- */
+function parseDate(str){
+  if(!str) return null;
+  var d = new Date(str+'T00:00:00');
+  return isNaN(d.getTime()) ? null : d;
+}
+function today(){
+  var t = new Date();
+  t.setHours(0,0,0,0);
+  return t;
+}
+function daysBetween(a,b){
+  return Math.round((b-a)/86400000);
+}
+function fmtDate(d){
+  return d.getFullYear()+'/'+String(d.getMonth()+1).padStart(2,'0')+'/'+String(d.getDate()).padStart(2,'0');
+}
+
+function taskStatus(task){
+  var t = today();
+  var d = parseDate(task.deadlineDate);
+  var p = getProgress();
+  if(p[task.id]) return {key:'done', label:'已勾選完成'};
+  if(!d) return {key:'todo', label:'待公告／持續進行'};
+  var diff = daysBetween(t,d);
+  if(diff < 0) return {key:'overdue', label:'已過日期'};
+  if(diff <= 14) return {key:'upcoming', label:diff===0?'今天':'倒數 '+diff+' 天'};
+  return {key:'open', label:'進行中'};
+}
+
+/* ---- 篩選 chips ---- */
+var currentFilter = 'all';
+var currentSearch = '';
+
+function renderChips(){
+  var wrap = $('#filterChips');
+  wrap.innerHTML = '';
+  CATEGORIES.forEach(function(c){
+    var b = document.createElement('button');
+    b.className = 'chip' + (c.key===currentFilter?' active':'');
+    b.textContent = c.label;
+    b.type='button';
+    b.setAttribute('aria-pressed', c.key===currentFilter ? 'true':'false');
+    b.addEventListener('click', function(){
+      currentFilter = c.key;
+      renderChips();
+      renderTasks();
+    });
+    wrap.appendChild(b);
+  });
+}
+
+/* ---- 任務卡片渲染 ---- */
+function taskMatches(task){
+  var okCat = currentFilter==='all' || task.cats.indexOf(currentFilter) !== -1;
+  var q = currentSearch.trim().toLowerCase();
+  var okSearch = !q || task.name.toLowerCase().indexOf(q)!==-1 || (task.criteria||'').toLowerCase().indexOf(q)!==-1 || task.type.toLowerCase().indexOf(q)!==-1;
+  return okCat && okSearch;
+}
+
+function buildAgendaTable(task){
+  if(!task.agenda) return '';
+  var rows = task.agenda.map(function(r){
+    return '<tr>' + r.map(function(c){ return '<td>'+esc(c)+'</td>'; }).join('') + '</tr>';
+  }).join('');
+  return '<table class="mini-table"><tbody>'+rows+'</tbody></table>';
+}
+
+function esc(s){
+  var div = document.createElement('div');
+  div.textContent = s==null ? '' : String(s);
+  return div.innerHTML;
+}
+
+function renderTasks(){
+  var grid = $('#taskGrid');
+  var list = TASKS.filter(taskMatches);
+  $('#resultCount').textContent = '共找到 '+list.length+' 項任務';
+  grid.innerHTML = '';
+  if(list.length===0){
+    grid.innerHTML = '<div class="empty-state">找不到符合條件的任務，試試其他關鍵字或篩選分類。</div>';
+    return;
+  }
+  var progress = getProgress();
+  list.forEach(function(task){
+    var st = taskStatus(task);
+    var card = document.createElement('article');
+    card.className = 'task-card';
+    card.setAttribute('data-id', task.id);
+
+    var catsHtml = task.cats.map(function(c){ return '<span class="tag tag-cat">'+esc(catLabel(c))+'</span>'; }).join('');
+    var reqHtml = task.required ? '<span class="tag tag-required">必修</span>' : '<span class="tag tag-optional">選修／加分</span>';
+    var typeHtml = '<span class="tag tag-type">'+esc(task.type)+'</span>';
+
+    var linksHtml = '';
+    if(task.links && task.links.length){
+      linksHtml = '<div class="link-list">' + task.links.map(function(l){
+        return '<a href="'+esc(l.url)+'" target="_blank" rel="noopener">→ '+esc(l.label)+'</a>';
+      }).join('') + '</div>';
+    }
+
+    var agendaHtml = buildAgendaTable(task);
+
+    card.innerHTML =
+      '<div class="task-top">'+
+        '<div class="task-tags">'+catsHtml+reqHtml+typeHtml+'</div>'+
+        '<span class="status-badge status-'+st.key+'">'+esc(st.label)+'</span>'+
+      '</div>'+
+      '<h3 class="task-name">'+esc(task.name)+'</h3>'+
+      '<div class="task-meta-list">'+
+        '<div class="mrow"><span class="mlabel">完成期限</span><span class="mval">'+esc(task.deadline)+'</span></div>'+
+        (task.duration ? '<div class="mrow"><span class="mlabel">預估時間</span><span class="mval">'+esc(task.duration)+'</span></div>' : '')+
+        '<div class="mrow"><span class="mlabel">完成條件</span><span class="mval">'+esc(task.criteria)+'</span></div>'+
+        '<div class="mrow"><span class="mlabel">前置任務</span><span class="mval">'+esc(task.prereq)+'</span></div>'+
+        '<div class="mrow"><span class="mlabel">下一步</span><span class="mval">'+esc(task.nextStep)+'</span></div>'+
+      '</div>'+
+      linksHtml+
+      '<div class="impact-box"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.29 3.86l-8.18 14.18A2 2 0 0 0 3.82 21h16.36a2 2 0 0 0 1.71-3.03L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg><span>'+esc(task.impact)+'</span></div>'+
+      '<div class="task-actions">'+
+        '<button type="button" class="btn btn-outline btn-sm js-toggle-detail">展開詳情</button>'+
+        '<label class="checklist-toggle'+(progress[task.id]?' checked':'')+'">'+
+          '<input type="checkbox" class="js-mark-done" '+(progress[task.id]?'checked':'')+' aria-label="標記「'+esc(task.name)+'」為已完成">'+
+          '<span>標記為已完成</span>'+
+        '</label>'+
+      '</div>'+
+      '<div class="detail-panel">'+
+        '<div class="qa-item"><div class="qa-q">在哪裡做？</div><div class="qa-a">'+esc(task.where)+'</div></div>'+
+        '<div class="qa-item"><div class="qa-q">要帶什麼？</div><div class="qa-a">'+esc(task.bring)+'</div></div>'+
+        '<div class="qa-item"><div class="qa-q">怎樣才算完成？如何確認？</div><div class="qa-a">'+esc(task.confirm)+'</div></div>'+
+        '<div class="qa-item"><div class="qa-q">如果沒有完成怎麼辦？</div><div class="qa-a">'+esc(task.ifNot)+'</div></div>'+
+        '<div class="qa-item"><div class="qa-q">我應該向哪個單位詢問？</div><div class="qa-a">'+esc(task.ask)+'</div></div>'+
+        (agendaHtml ? '<div class="qa-item"><div class="qa-q">詳細時程／對照表</div><div class="qa-a">'+agendaHtml+'</div></div>' : '')+
+        (task.note ? '<div class="qa-item"><div class="qa-q">補充說明</div><div class="qa-a">'+esc(task.note)+'</div></div>' : '')+
+      '</div>';
+
+    var toggleBtn = card.querySelector('.js-toggle-detail');
+    var panel = card.querySelector('.detail-panel');
+    toggleBtn.addEventListener('click', function(){
+      var open = panel.classList.toggle('open');
+      toggleBtn.textContent = open ? '收合詳情' : '展開詳情';
+      toggleBtn.setAttribute('aria-expanded', open ? 'true':'false');
+    });
+    var checkInput = card.querySelector('.js-mark-done');
+    checkInput.addEventListener('change', function(){
+      toggleProgress(task.id);
+      renderTasks();
+    });
+
+    grid.appendChild(card);
+  });
+}
+
+/* ---- 時間軸渲染 ---- */
+function renderTimeline(){
+  var track = $('#timelineTrack');
+  track.innerHTML = '';
+  TIMELINE.forEach(function(node, idx){
+    var isTba = node.flags.indexOf('tba') !== -1;
+    var el = document.createElement('div');
+    el.className = 'tl-node' + (isTba ? ' tba' : '');
+    var flagsHtml = node.flags.map(function(f){
+      var map = {
+        parallel:['flag-parallel','可同時進行'], sequential:['flag-sequential','需按順序完成'],
+        deadline:['flag-deadline','固定截止日期'], exam:['flag-exam','固定考試日期'], tba:['flag-tba','待公告']
+      };
+      var m = map[f];
+      return '<span class="flag '+m[0]+'">'+m[1]+'</span>';
+    }).join('');
+    el.innerHTML =
+      '<div class="tl-dot">'+(idx+1)+'</div>'+
+      '<div class="tl-body">'+
+        '<div class="tl-head"><span class="tl-title">'+esc(node.title)+'</span><span class="tl-date">'+esc(node.date)+'</span></div>'+
+        '<div class="tl-desc">'+esc(node.desc)+'</div>'+
+        '<div class="tl-flags">'+flagsHtml+'</div>'+
+      '</div>';
+    track.appendChild(el);
+  });
+}
+
+/* ---- 近期優先事項 ---- */
+function renderUpcoming(){
+  var t = today();
+  $('#upcomingUpdated').textContent = '資料整理日期：2026/07/31｜狀態依你目前裝置日期（'+fmtDate(t)+'）自動計算';
+
+  var buckets = {now:[], soon:[], exam:[], tba:[]};
+
+  TASKS.forEach(function(task){
+    var d = parseDate(task.deadlineDate);
+    if(!d){
+      buckets.tba.push({name:task.name, date:task.deadline});
+      return;
+    }
+    var diff = daysBetween(t,d);
+    var isExam = task.type.indexOf('測驗') !== -1 || task.type.indexOf('前測') !== -1 || task.type.indexOf('後測') !== -1;
+    if(diff>=-3 && diff<0){
+      buckets.now.push({name:task.name, date:task.deadline+'（已過期限，如尚未完成請儘速確認補救方式）'});
+    } else if(diff>=0 && diff<=7){
+      (isExam?buckets.exam:buckets.now).push({name:task.name, date:task.deadline});
+    } else if(diff>7 && diff<=30){
+      buckets.soon.push({name:task.name, date:task.deadline});
+    }
+  });
+
+  var cols = [
+    {key:'now', title:'現在應該完成／即將截止（7天內）', color:'var(--red)', data:buckets.now},
+    {key:'exam', title:'即將考試（7天內）', color:'var(--navy)', data:buckets.exam},
+    {key:'soon', title:'即將截止／開放（8～30天內）', color:'var(--amber)', data:buckets.soon},
+    {key:'tba', title:'尚待公告或持續進行中', color:'var(--muted-2)', data:buckets.tba},
+  ];
+
+  var wrap = $('#upcomingCols');
+  wrap.innerHTML = '';
+  cols.forEach(function(col){
+    var el = document.createElement('div');
+    el.className = 'upcoming-col';
+    var itemsHtml = col.data.length
+      ? col.data.map(function(it){ return '<div class="up-item"><div class="up-name">'+esc(it.name)+'</div><div class="up-date">'+esc(it.date)+'</div></div>'; }).join('')
+      : '<div class="up-empty">目前沒有符合的項目</div>';
+    el.innerHTML = '<h3><span class="dot" style="background:'+col.color+'"></span>'+esc(col.title)+'</h3>'+itemsHtml;
+    wrap.appendChild(el);
+  });
+}
+
+/* ---- Hero 最近期限 ---- */
+function renderHeroNext(){
+  var t = today();
+  var withDates = TASKS.filter(function(tk){ return tk.deadlineDate; })
+    .map(function(tk){ return {task:tk, d:parseDate(tk.deadlineDate)}; })
+    .filter(function(x){ return x.d && daysBetween(t,x.d) >= 0; })
+    .sort(function(a,b){ return a.d - b.d; });
+  var body = $('#heroNextBody');
+  if(withDates.length===0){
+    body.textContent = '目前已無未來日期之明確期限，其餘項目請留意教學部後續公告。';
+    return;
+  }
+  var next = withDates[0];
+  var diff = daysBetween(t, next.d);
+  var diffText = diff===0 ? '就是今天' : ('倒數 '+diff+' 天');
+  body.innerHTML = '<b>'+esc(next.task.name)+'</b>　'+esc(next.task.deadline)+'　（'+diffText+'）';
+}
+
+/* ---- 考試專區渲染 ---- */
+function renderExams(){
+  var list = $('#examList');
+  list.innerHTML = '';
+  var kindMap = {formal:['正式評量','var(--navy)'], practice:['練習／工作坊課程','var(--amber)'], work:['作業／持續性項目','var(--muted-2)']};
+  EXAMS.forEach(function(ex){
+    var km = kindMap[ex.kind];
+    var card = document.createElement('div');
+    card.className = 'exam-card';
+    card.innerHTML =
+      '<div class="exam-card-head">'+
+        '<span class="exam-name">'+esc(ex.name)+'</span>'+
+        '<span class="tag" style="background:'+km[1]+';color:#fff;">'+km[0]+'</span>'+
+      '</div>'+
+      '<div class="exam-grid">'+
+        field('日期', ex.date)+field('時間', ex.time)+field('地點', ex.place)+
+        field('報到規定', ex.checkin)+field('攜帶物品', ex.bring)+field('測驗方式', ex.method)+
+        field('通過／完成標準', ex.pass)+field('考前準備建議', ex.prep)+field('缺考／補考規定', ex.absence)+
+      '</div>';
+    list.appendChild(card);
+  });
+  function field(label,val){
+    return '<div class="exam-field"><div class="flabel">'+esc(label)+'</div><div class="fval">'+esc(val)+'</div></div>';
+  }
+}
+
+/* ---- 完整學保課程表 ---- */
+var SCHEDULE_FILTERS = [
+  {key:'醫五', label:'醫五（你這屆）'},
+  {key:'醫六', label:'醫六'},
+  {key:'all', label:'全部（含醫六／停課）'}
+];
+var currentScheduleFilter = '醫五';
+var currentScheduleSearch = '';
+var WEEKDAY_LABELS = ['日','一','二','三','四','五','六'];
+
+function renderScheduleChips(){
+  var wrap = $('#scheduleChips');
+  wrap.innerHTML = '';
+  SCHEDULE_FILTERS.forEach(function(c){
+    var b = document.createElement('button');
+    b.className = 'chip' + (c.key===currentScheduleFilter?' active':'');
+    b.textContent = c.label;
+    b.type='button';
+    b.setAttribute('aria-pressed', c.key===currentScheduleFilter ? 'true':'false');
+    b.addEventListener('click', function(){
+      currentScheduleFilter = c.key;
+      renderScheduleChips();
+      renderSchedule();
+    });
+    wrap.appendChild(b);
+  });
+}
+
+function scheduleRowMatches(row){
+  var okAudience = currentScheduleFilter==='all' || row.audience===currentScheduleFilter || row.audience==='全體' || (currentScheduleFilter==='醫五' && row.audience==null);
+  var q = currentScheduleSearch.trim().toLowerCase();
+  var hay = [row.date,row.unit,row.topic,row.teacher,row.place,row.time].filter(Boolean).join(' ').toLowerCase();
+  var okSearch = !q || hay.indexOf(q)!==-1;
+  return okAudience && okSearch;
+}
+
+function fmtScheduleDate(dateStr){
+  var d = parseDate(dateStr);
+  if(!d) return dateStr;
+  return dateStr + '（週' + WEEKDAY_LABELS[d.getDay()] + '）';
+}
+
+function renderSchedule(){
+  var wrap = $('#scheduleList');
+  var list = SCHEDULE.filter(scheduleRowMatches);
+  $('#scheduleResultCount').textContent = '共找到 '+list.length+' 筆課程紀錄（全表共 '+SCHEDULE.length+' 筆）';
+  wrap.innerHTML = '';
+  if(!list.length){
+    wrap.innerHTML = '<p class="sched-empty">沒有符合條件的課程，試試清除搜尋或切換篩選。</p>';
+    return;
+  }
+  // 依日期分組
+  var groups = [];
+  var groupMap = {};
+  list.forEach(function(row){
+    var key = row.date || '（日期未標明）';
+    if(!groupMap[key]){ groupMap[key] = []; groups.push(key); }
+    groupMap[key].push(row);
+  });
+  groups.forEach(function(dateKey){
+    var rows = groupMap[dateKey];
+    var card = document.createElement('div');
+    card.className = 'sched-day';
+    var rowsHtml = rows.map(function(r){
+      if(r.time==='停課'){
+        return '<tr class="sched-holiday"><td colspan="5">'+esc(r.topic)+'</td></tr>';
+      }
+      var badge = r.audience==='醫五' ? '<span class="sched-badge med5">醫五</span>'
+        : r.audience==='醫六' ? '<span class="sched-badge med6">醫六</span>'
+        : r.audience==='全體' ? '<span class="sched-badge all">全體</span>' : '';
+      return '<tr>'+
+        '<td class="sched-time">'+esc(r.time)+'</td>'+
+        '<td>'+badge+'</td>'+
+        '<td>'+esc(r.unit)+'</td>'+
+        '<td>'+esc(r.topic)+(r.teacher?'（'+esc(r.teacher)+'）':'')+'</td>'+
+        '<td>'+esc(r.place)+'</td>'+
+      '</tr>';
+    }).join('');
+    card.innerHTML =
+      '<div class="sched-day-head"><span class="sched-date">'+esc(fmtScheduleDate(dateKey))+'</span></div>'+
+      '<table class="sched-table"><thead><tr><th>時間</th><th>對象</th><th>科部／單位</th><th>主題（教師）</th><th>地點</th></tr></thead>'+
+      '<tbody>'+rowsHtml+'</tbody></table>';
+    wrap.appendChild(card);
+  });
+}
+
+/* ---- 我的完成度區塊 ---- */
+function refreshProgressUI(){
+  var progress = getProgress();
+  var total = TASKS.length;
+  var done = TASKS.filter(function(t){ return progress[t.id]; }).length;
+  var pct = total ? Math.round(done/total*100) : 0;
+  $('#progressPercent').textContent = pct+'%';
+  $('#progressBarFill').style.width = pct+'%';
+  $('#progressCount').textContent = done+' / '+total;
+
+  // 分組清單
+  var groups = {};
+  CATEGORIES.forEach(function(c){ if(c.key!=='all') groups[c.key] = []; });
+  TASKS.forEach(function(t){ t.cats.forEach(function(c){ if(groups[c]) groups[c].push(t); }); });
+
+  var wrap = $('#progressChecklist');
+  wrap.innerHTML = '';
+  CATEGORIES.forEach(function(c){
+    if(c.key==='all') return;
+    var items = groups[c.key];
+    if(!items.length) return;
+    var g = document.createElement('div');
+    g.className = 'progress-group';
+    var rowsHtml = items.map(function(t){
+      var checked = !!progress[t.id];
+      var rid = 'pc_'+t.id;
+      return '<div class="pcheck-row'+(checked?' done':'')+'">'+
+        '<input type="checkbox" id="'+rid+'" '+(checked?'checked':'')+' data-id="'+esc(t.id)+'">'+
+        '<label for="'+rid+'">'+esc(t.name)+'</label>'+
+      '</div>';
+    }).join('');
+    g.innerHTML = '<h4>'+esc(c.label)+'</h4>'+rowsHtml;
+    wrap.appendChild(g);
+  });
+
+  $$('.pcheck-row input', wrap).forEach(function(inp){
+    inp.addEventListener('change', function(){
+      toggleProgress(inp.getAttribute('data-id'));
+      renderTasks();
+    });
+  });
+
+  // 同步任務卡片上的勾選框樣式（不用整個重繪，避免遺失展開狀態時才呼叫此輕量同步）
+  $$('.task-card').forEach(function(card){
+    var id = card.getAttribute('data-id');
+    var input = card.querySelector('.js-mark-done');
+    var label = card.querySelector('.checklist-toggle');
+    if(input){
+      input.checked = !!progress[id];
+      label.classList.toggle('checked', !!progress[id]);
+    }
+    var badge = card.querySelector('.status-badge');
+    var task = TASKS.filter(function(t){return t.id===id;})[0];
+    if(task && badge){
+      var st = taskStatus(task);
+      badge.className = 'status-badge status-'+st.key;
+      badge.textContent = st.label;
+    }
+  });
+}
+
+/* ---- FAQ 渲染 ---- */
+function renderFAQ(){
+  var list = $('#faqList');
+  list.innerHTML = '';
+  FAQS.forEach(function(f, idx){
+    var item = document.createElement('div');
+    item.className = 'faq-item';
+    var aid = 'faq_a_'+idx;
+    item.innerHTML =
+      '<button type="button" class="faq-q" aria-expanded="false" aria-controls="'+aid+'">'+
+        '<span>'+esc(f.q)+'</span><span class="plus" aria-hidden="true">+</span>'+
+      '</button>'+
+      '<div class="faq-a" id="'+aid+'"><div class="faq-a-inner">'+esc(f.a)+'</div></div>';
+    var btn = item.querySelector('.faq-q');
+    var panel = item.querySelector('.faq-a');
+    btn.addEventListener('click', function(){
+      var open = item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open?'true':'false');
+      panel.style.maxHeight = open ? panel.scrollHeight+'px' : '0px';
+    });
+    list.appendChild(item);
+  });
+}
+
+/* ---- 全站初始化 ---- */
+function init(){
+  renderChips();
+  renderTasks();
+  renderTimeline();
+  renderUpcoming();
+  renderHeroNext();
+  renderExams();
+  renderScheduleChips();
+  renderSchedule();
+  refreshProgressUI();
+  renderFAQ();
+
+  // 搜尋
+  var searchInput = $('#searchInput');
+  searchInput.addEventListener('input', function(){
+    currentSearch = searchInput.value;
+    renderTasks();
+  });
+
+  // 課表搜尋
+  var scheduleSearch = $('#scheduleSearch');
+  scheduleSearch.addEventListener('input', function(){
+    currentScheduleSearch = scheduleSearch.value;
+    renderSchedule();
+  });
+
+  // 手機選單
+  var navToggle = $('#navToggle');
+  var navLinks = $('#navLinks');
+  navToggle.addEventListener('click', function(){
+    var open = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open?'true':'false');
+  });
+  $$('#navLinks a').forEach(function(a){
+    a.addEventListener('click', function(){ navLinks.classList.remove('open'); navToggle.setAttribute('aria-expanded','false'); });
+  });
+
+  // 回到頂端
+  var backBtn = $('#backToTop');
+  window.addEventListener('scroll', function(){
+    backBtn.classList.toggle('show', window.scrollY > 480);
+  }, {passive:true});
+  backBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  // 清除本機紀錄
+  $('#clearProgressBtn').addEventListener('click', function(){
+    if(confirm('確定要清除本機儲存的個人進度勾選紀錄嗎？此動作無法復原，且不會影響教學部正式紀錄。')){
+      try{ localStorage.removeItem(STORAGE_KEY); }catch(e){}
+      renderTasks();
+      refreshProgressUI();
+    }
+  });
+
+  // 列印
+  $('#printBtn').addEventListener('click', function(){ window.print(); });
+}
+
+document.addEventListener('DOMContentLoaded', init);
+})();
+</script>
+</body>
+</html>
